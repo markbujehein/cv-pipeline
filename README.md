@@ -16,23 +16,15 @@ The pipeline generates three distinct CV variants, each optimized with specific 
     -   *Color: Steel Blue*
     -   *Focus:* Deep expertise in Neutronics, Neutron Compton Scattering (NCS), and hands-on facility experience (ISIS, MAX IV).
 
-## Local Usage
+## Automated Workflow
 
-### Build All Variants
-```bash
-make all
-```
+This project is optimized for automated generation via **GitHub Actions**. 
 
-### Run Tests
-```bash
-make test
-```
+1.  **Edit** your data in the `data/` directory.
+2.  **Commit and Push** your changes to the `main` branch.
+3.  **Download** your generated CVs from the **GitHub Releases** section.
 
-### Target Specific Variant
-```bash
-python scripts/generate.py --variant [variant-name] --data-dir data/ --output output/generated/[variant-name].tex
-pdflatex -output-directory=output/generated/ output/generated/[variant-name].tex
-```
+The pipeline automatically validates your data, compiles the LaTeX variants, and runs completeness tests on every push.
 
 ## Data Structure
 
