@@ -56,14 +56,14 @@ def load_yaml_data(data_dir: Path) -> Dict[str, Any]:
 
     return data
 
-def generate_software_developer(data: Dict[str, Any]) -> str:
-    """Generate software developer CV - No templates, just Python."""
+def generate_nanoscientist(data: Dict[str, Any]) -> str:
+    """Generate nanoscientist CV."""
     personal = data['personal']
     experience = data['experience']
     skills = data['skills']
     strengths = data['strengths']
     education = data['education']
-    certifications = data['certifications']
+    certifications = data.get('certifications', [])
 
     # Build LaTeX directly
     latex = r'''\documentclass[10pt,a4paper,withhyper]{altacv}
@@ -115,7 +115,7 @@ def generate_software_developer(data: Dict[str, Any]) -> str:
 
     # Personal info
     latex += f"\\name{{{escape_latex(personal['first_name'])} {escape_latex(personal['last_name'])}}}\n"
-    latex += f"\\tagline{{{escape_latex(personal['taglines']['software-developer'])}}}\n\n"
+    latex += f"\\tagline{{{escape_latex(personal['taglines']['nanoscientist'])}}}\n\n"
 
     # Contact info
     latex += "\\personalinfo{%\n"
@@ -137,14 +137,14 @@ def generate_software_developer(data: Dict[str, Any]) -> str:
     latex += "\\columnratio{0.6}\n\n"
     latex += "\\begin{paracol}{2}\n\n"
 
-    # Leadership Profile (first strength)
-    latex += "\\cvsection{Leadership Profile}\n\n"
+    # Scientific Profile (first strength)
+    latex += "\\cvsection{Scientific Profile}\n\n"
     latex += f"\\textbf{{{escape_latex(strengths[0]['title'])}}}\n\n"
     latex += f"{escape_latex(strengths[0]['description'])}\n\n"
     latex += "\\medskip\n\n"
 
-    # Professional Experience (first 6)
-    latex += "\\cvsection{Professional Experience}\n\n"
+    # Research & Project Experience
+    latex += "\\cvsection{Research \\& Projects}\n\n"
     for job in experience[:3]:
         latex += f"\\cvevent{{{escape_latex(job['title'])}}}{{{escape_latex(job['company'])}}}"
         latex += f"{{{job['start_date']}--{job['end_date']}}}{{{escape_latex(job['location'])}}}\n"
@@ -165,19 +165,14 @@ def generate_software_developer(data: Dict[str, Any]) -> str:
             latex += "\\divider\n\n"
 
     # Expertise
-    latex += "\\cvsection{Expertise}\n\n"
-    latex += "\\cvtag{Leadership}\n"
-    latex += "\\cvtag{Strategy}\n"
-    latex += "\\cvtag{Team Building}\n\n"
-    latex += "\\divider\\medskip\n\n"
-
-    # Programming Languages (first 6)
-    for skill in skills['Programming Languages'][:6]:
+    latex += "\\cvsection{Scientific Expertise}\n\n"
+    for skill in skills['Scientific Expertise']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
     latex += "\n\\divider\\medskip\n\n"
 
-    # DevOps and Cloud (first 8)
-    for skill in skills['DevOps and Cloud Technologies'][:8]:
+    # Programming & Computation
+    latex += "\\cvsection{Computation}\n\n"
+    for skill in skills['Programming & Computation']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
     # Education
@@ -199,15 +194,14 @@ def generate_software_developer(data: Dict[str, Any]) -> str:
 
     return latex
 
-def generate_devops_engineer(data: Dict[str, Any]) -> str:
-    """Generate developer advocate CV - simple and direct."""
-    # Similar structure but with different colors/sections
+def generate_machine_learning_engineer(data: Dict[str, Any]) -> str:
+    """Generate ML engineer CV."""
     personal = data['personal']
     experience = data['experience']
     skills = data['skills']
     strengths = data['strengths']
     education = data['education']
-    certifications = data['certifications']
+    certifications = data.get('certifications', [])
 
     latex = r'''\documentclass[10pt,a4paper,withhyper]{altacv}
 
@@ -256,7 +250,7 @@ def generate_devops_engineer(data: Dict[str, Any]) -> str:
 
     # Personal info
     latex += f"\\name{{{escape_latex(personal['first_name'])} {escape_latex(personal['last_name'])}}}\n"
-    latex += f"\\tagline{{{escape_latex(personal['taglines']['devops-engineer'])}}}\n\n"
+    latex += f"\\tagline{{{escape_latex(personal['taglines']['machine-learning-engineer'])}}}\n\n"
 
     latex += "\\personalinfo{%\n"
     latex += f"  \\email{{{escape_latex(personal['email'])}}}\n"
@@ -277,13 +271,13 @@ def generate_devops_engineer(data: Dict[str, Any]) -> str:
     latex += "\\columnratio{0.6}\n\n"
     latex += "\\begin{paracol}{2}\n\n"
 
-    # About Me
-    latex += "\\cvsection{About Me}\n\n"
+    # Research Summary
+    latex += "\\cvsection{Research Summary}\n\n"
     latex += f"{escape_latex(strengths[0]['description'])}\n\n"
     latex += "\\medskip\n\n"
 
-    # Community & Experience
-    latex += "\\cvsection{Community \\& Experience}\n\n"
+    # Machine Learning & Experience
+    latex += "\\cvsection{ML \\& Experience}\n\n"
     for job in experience[:3]:
         latex += f"\\cvevent{{{escape_latex(job['title'])}}}{{{escape_latex(job['company'])}}}"
         latex += f"{{{job['start_date']}--{job['end_date']}}}{{{escape_latex(job['location'])}}}\n"
@@ -302,20 +296,15 @@ def generate_devops_engineer(data: Dict[str, Any]) -> str:
         if strength != strengths[2]:
             latex += "\\divider\n\n"
 
-    # Tech Stack
-    latex += "\\cvsection{Tech Stack}\n\n"
-    for skill in skills['Programming Languages']:
+    # Machine Learning Stack
+    latex += "\\cvsection{ML Stack}\n\n"
+    for skill in skills['Machine Learning & Statistics']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
     latex += "\n\\divider\\smallskip\n\n"
 
-    for skill in skills['DevOps and Cloud Technologies']:
+    for skill in skills['Programming & Computation']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
-
-    latex += "\n\\divider\\smallskip\n\n"
-    latex += "\\cvtag{Content Creation}\n"
-    latex += "\\cvtag{Public Speaking}\n"
-    latex += "\\cvtag{Community Building}\n"
-    latex += "\\cvtag{Technical Writing}\n\n"
+    latex += "\n"
 
     # Education
     latex += "\\cvsection{Education}\n\n"
@@ -336,14 +325,14 @@ def generate_devops_engineer(data: Dict[str, Any]) -> str:
 
     return latex
 
-def generate_cloud_engineer(data: Dict[str, Any]) -> str:
-    """Generate platform engineer CV - technical and precise."""
+def generate_scattering_physicist(data: Dict[str, Any]) -> str:
+    """Generate scattering physicist CV."""
     personal = data['personal']
     experience = data['experience']
     skills = data['skills']
     strengths = data['strengths']
     education = data['education']
-    certifications = data['certifications']
+    certifications = data.get('certifications', [])
 
     latex = r'''\documentclass[10pt,a4paper,withhyper]{altacv}
 
@@ -394,7 +383,7 @@ def generate_cloud_engineer(data: Dict[str, Any]) -> str:
 
     # Personal info
     latex += f"\\name{{{escape_latex(personal['first_name'])} {escape_latex(personal['last_name'])}}}\n"
-    latex += f"\\tagline{{{escape_latex(personal['taglines']['cloud-engineer'])}}}\n\n"
+    latex += f"\\tagline{{{escape_latex(personal['taglines']['scattering-physicist'])}}}\n\n"
 
     latex += "\\personalinfo{%\n"
     latex += f"  \\email{{{escape_latex(personal['email'])}}}\n"
@@ -440,20 +429,14 @@ def generate_cloud_engineer(data: Dict[str, Any]) -> str:
         if strength != strengths[3]:
             latex += "\\divider\n\n"
 
-    # Technical Stack
-    latex += "\\cvsection{Technical Stack}\n\n"
-    latex += "\\textbf{Languages}\n\n"
-    for skill in skills['Programming Languages']:
+    # Scattering Expertise
+    latex += "\\cvsection{Scattering Expertise}\n\n"
+    for skill in skills['Scientific Expertise']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
-
     latex += "\n\\divider\\smallskip\n\n"
-    latex += "\\textbf{Infrastructure \\& Cloud}\n\n"
-    for skill in skills['DevOps and Cloud Technologies']:
-        latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
-    latex += "\n\\divider\\smallskip\n\n"
-    latex += "\\textbf{Cloud Platforms}\n\n"
-    for skill in skills['Cloud Platforms']:
+    latex += "\\textbf{Computation}\n\n"
+    for skill in skills['Programming & Computation']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
     # Education
@@ -479,7 +462,7 @@ def main():
         epilog='Generates LaTeX CV from YAML data with built-in validation'
     )
     parser.add_argument('--variant', required=True,
-                       choices=['software-developer', 'devops-engineer', 'cloud-engineer'],
+                       choices=['nanoscientist', 'machine-learning-engineer', 'scattering-physicist'],
                        help='CV variant to generate')
     parser.add_argument('--data-dir', required=True, type=Path,
                        help='Directory containing YAML data files')
@@ -500,9 +483,9 @@ def main():
 
         # Generate based on variant
         generators = {
-            'software-developer': generate_software_developer,
-            'devops-engineer': generate_devops_engineer,
-            'cloud-engineer': generate_cloud_engineer,
+            'nanoscientist': generate_nanoscientist,
+            'machine-learning-engineer': generate_machine_learning_engineer,
+            'scattering-physicist': generate_scattering_physicist,
         }
 
         print(f"Generating LaTeX for variant: {args.variant}")

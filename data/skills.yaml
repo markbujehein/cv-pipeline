@@ -1,28 +1,42 @@
 Languages:
-  - "English (Native)"
-  - "Spanish (Business Fluent)"
-  - "French (Conversational)"
+  - "English (C2/Highest non-native level, primary use)"
+  - "Danish (Native)"
+  - "German (B2)"
+  - "Swedish (Conversational/Reading)"
 
-Programming Languages:
-  - "Go"
+Programming & Computation:
   - "Python"
-  - "JavaScript/TypeScript"
-  - "Rust"
   - "Bash"
-  - "SQL"
+  - "HTML"
+  - "YAML"
+  - "Typst"
+  - "LaTeX"
+  - "Git"
 
-DevOps and Cloud Technologies:
-  - "Kubernetes"
-  - "Docker"
-  - "ArgoCD"
-  - "Terraform"
-  - "Ansible"
-  - "GitHub Actions"
-  - "Crossplane"
-  - "Prometheus"
-  - "Grafana"
+Scientific Expertise:
+  - "Neutron Compton Scattering (NCS)"
+  - "Neutronics"
+  - "Vibrational Density of States (VDoS)"
+  - "X-ray & Neutron Science"
+  - "Computational Chemistry"
+  - "Spectrometry (TOSCA, CoSAXS, VESUVIO Data)"
+  - "Neutron Moderator Materials"
 
-Cloud Platforms:
-  - "AWS"
-  - "GCP"
-  - "Azure"
+Machine Learning & Statistics:
+  - "Applied Statistics"
+  - "Graphical Neural Networks (GNN)"
+  - "Supervised Learning"
+  - "Data Analysis"
+
+General Scientific & Laboratory Experience:
+  - "FTIR Spectroscopy"
+  - "Organic Synthesis"
+  - "RT-PCR"
+  - "SDS-PAGE"
+  - "Agarose Gel Electrophoresis"
+  - "Beer Brewing"
+  - "Microfluidics"
+  - "UV-vis Absorption Spectroscopy"
+  - "Atomic Force Microscopy (AFM)"
+  - "Fluorescence Microscopy"
+  - "Melting Point Analysis"

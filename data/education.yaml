@@ -1,5 +1,19 @@
-- degree: "Bachelor's in Computer Science"
-  institution: "State University"
-  location: "Boston, MA"
-  start_date: "2013"
-  end_date: "2017"
+- degree: "BSc in Nanoscience"
+  institution: "University of Copenhagen"
+  location: "Copenhagen"
+  start_date: "2023"
+  end_date: "2025"
+- degree: "MSc in Nanoscience"
+  institution: "Niels Bohr Institute, University of Copenhagen"
+  location: "Copenhagen"
+  start_date: "2025"
+  end_date: "2026"
+  specialization: "Neutron & X-ray Science"
+  notes: |
+    Thesis: Investigating novel neutron moderator materials (thymol, p-cymene) using computational and experimental methods.
+    Supervised by Assoc. Prof. Heloisa Bordallo (NBI) and Dr. Svemir Rudic (ISIS).
+    Research includes Neutron Compton Scattering (NCS) and transmission data analysis from VESUVIO (in collaboration with Dr. Matthew Krzystyniak), and VDoS analysis from TOSCA.
+    Relevant Coursework:
+    - X-ray & Neutron Science (22.5 ECTS)
+    - Computational Chemistry (15 ECTS)
+    - Applied Statistics & Machine Learning (15 ECTS)

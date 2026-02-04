@@ -1,47 +1,41 @@
-- title: "Senior DevOps Engineer"
-  company: "Tech Corp Inc"
-  location: "Remote"
-  start_date: "01/2022"
+- title: "MSc Thesis Student"
+  company: "X-ray and Neutron Science Group (XNS), Niels Bohr Institute"
+  location: "Copenhagen / Oxfordshire, UK"
+  start_date: "2025"
   end_date: "present"
-  tags: ["devops", "cloud"]
+  tags: ["nanoscience", "scattering-physics"]
   achievements:
-    - "Architected and maintained Kubernetes infrastructure supporting 100+ microservices"
-    - "Implemented GitOps workflows with ArgoCD, reducing deployment time by 60%"
-    - "Automated CI/CD pipelines with GitHub Actions and Terraform"
-    - "Reduced cloud infrastructure costs by 35% through optimization"
+    - "Collaborating with Dr. Matthew Krzystyniak (ISIS) on analysis of Neutron Compton Scattering (NCS) and transmission data from VESUVIO"
+    - "Working with Dr. Svemir Rudic (ISIS) on neutron moderators, performing experiments on the TOSCA spectrometer"
+    - "Investigating thymol and p-cymene for their hydrogen density and radiation resistance as moderator materials"
+    - "Supervised by Assoc. Prof. Heloisa Bordallo; combining experimental data with theoretical calculations"
 
-- title: "Cloud Engineer"
-  company: "Cloud Solutions LLC"
-  location: "San Francisco, CA"
-  start_date: "03/2020"
-  end_date: "12/2021"
-  tags: ["cloud", "development"]
+- title: "Beam Time Assistant"
+  company: "MAX IV and ISIS Neutron and Muon Source"
+  location: "Lund, Sweden / Oxfordshire, UK"
+  start_date: "2024"
+  end_date: "present"
+  tags: ["scattering-physics", "nanoscience"]
   achievements:
-    - "Designed and deployed scalable AWS infrastructure using Terraform"
-    - "Migrated legacy applications to cloud-native architecture"
-    - "Implemented monitoring and alerting with CloudWatch and Prometheus"
-    - "Created infrastructure documentation and runbooks"
+    - "Personally requested by supervisor to assist on the CoSAXS instrument at MAX IV for one day of experimenting"
+    - "Assisted in 4 days of beam time on the TOSCA spectrometer at ISIS, gaining hands-on facility experience"
+    - "Participated in high-intensity epithermal neutron experiments and transmission measurements"
 
-- title: "Software Developer"
-  company: "StartUp XYZ"
-  location: "Remote"
-  start_date: "06/2018"
-  end_date: "02/2020"
-  tags: ["development", "devops"]
+- title: "ML Project: Graphical Neural Network"
+  company: "ALICE@CERN / University of Copenhagen"
+  location: "Copenhagen"
+  start_date: "2024"
+  end_date: "2024"
+  tags: ["ml", "statistics"]
   achievements:
-    - "Built RESTful APIs serving 1M+ requests/day using Python and PostgreSQL"
-    - "Developed web applications with React and Node.js"
-    - "Implemented automated testing and code quality checks"
-    - "Participated in agile development and sprint planning"
+    - "Developed and trained a Graphical Neural Network (GNN) on test-beam data from ALICE@CERN"
+    - "Completed as part of the Applied Statistics & Machine Learning coursework under Assoc. Prof. Troels Petersen"
 
-- title: "Junior Software Developer"
-  company: "Digital Solutions Inc"
-  location: "New York, NY"
-  start_date: "01/2017"
-  end_date: "05/2018"
-  tags: ["development"]
+- title: "STEM Student Representative"
+  company: "IDA STEM Students"
+  location: "Copenhagen"
+  start_date: "2024"
+  end_date: "present"
+  tags: ["nanoscience"]
   achievements:
-    - "Developed features for web applications using JavaScript and React"
-    - "Wrote unit tests and participated in code reviews"
-    - "Fixed bugs and improved application performance"
-    - "Collaborated with senior developers on technical designs"
+    - "Engaged in political and organizational activities representing STEM students"

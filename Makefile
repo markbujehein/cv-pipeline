@@ -1,6 +1,6 @@
 .PHONY: all clean help test software-developer devops-engineer cloud-engineer ats ats-all
 
-VARIANTS = software-developer devops-engineer cloud-engineer
+VARIANTS = nanoscientist machine-learning-engineer scattering-physicist
 DATA_DIR = data
 TEMPLATE_DIR = templates
 OUTPUT_DIR = output/generated
@@ -13,14 +13,14 @@ help:
 	@echo "CV Pipeline Build System"
 	@echo ""
 	@echo "Available targets:"
-	@echo "  all                  - Build all CV variants and run tests"
-	@echo "  software-developer   - Build Software Developer CV"
-	@echo "  devops-engineer      - Build DevOps Engineer CV"
-	@echo "  cloud-engineer       - Build Cloud Engineer CV"
-	@echo "  ats-all              - Generate all ATS-friendly text versions"
-	@echo "  test                 - Verify all YAML data is rendered in PDFs"
-	@echo "  clean                - Remove all generated files"
-	@echo "  help                 - Show this help message"
+	@echo "  all                           - Build all CV variants and run tests"
+	@echo "  nanoscientist                 - Build Nanoscientist CV"
+	@echo "  machine-learning-engineer     - Build Machine Learning Engineer CV"
+	@echo "  scattering-physicist          - Build Scattering Physicist CV"
+	@echo "  ats-all                       - Generate all ATS-friendly text versions"
+	@echo "  test                          - Verify all YAML data is rendered in PDFs"
+	@echo "  clean                         - Remove all generated files"
+	@echo "  help                          - Show this help message"
 	@echo ""
 	@echo "Build pipeline:"
 	@echo "  PDF:  YAML -> Python -> .tex -> pdflatex -> .pdf -> test"

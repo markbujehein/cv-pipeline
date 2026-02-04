@@ -89,19 +89,19 @@ def check_skills(data: Dict, pdf_text: str, variant: str) -> List[str]:
     issues = []
     pdf_normalized = normalize_text(pdf_text)
 
-    # Check programming languages
-    if 'Programming Languages' in data['skills']:
-        for skill in data['skills']['Programming Languages'][:6]:
+    # Check Scientific Expertise
+    if 'Scientific Expertise' in data['skills']:
+        for skill in data['skills']['Scientific Expertise']:
             skill_normalized = normalize_text(skill)
             if skill_normalized not in pdf_normalized:
-                issues.append(f"Missing programming language: {skill}")
+                issues.append(f"Missing scientific expertise: {skill}")
 
-    # Check DevOps/Cloud technologies
-    if 'DevOps and Cloud Technologies' in data['skills']:
-        for skill in data['skills']['DevOps and Cloud Technologies'][:8]:
+    # Check Programming & Computation
+    if 'Programming & Computation' in data['skills']:
+        for skill in data['skills']['Programming & Computation']:
             skill_normalized = normalize_text(skill)
             if skill_normalized not in pdf_normalized:
-                issues.append(f"Missing DevOps/Cloud tech: {skill}")
+                issues.append(f"Missing computation skill: {skill}")
 
     return issues
 
@@ -295,7 +295,7 @@ def main():
     if args.variant:
         variants = [args.variant]
     else:
-        variants = ['software-developer', 'devops-engineer', 'cloud-engineer']
+        variants = ['nanoscientist', 'machine-learning-engineer', 'scattering-physicist']
 
     print("CV Data Completeness Test")
     print("="*60)
