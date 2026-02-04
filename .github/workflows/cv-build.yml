@@ -18,9 +18,9 @@ jobs:
     strategy:
       matrix:
         variant:
-          - software-developer
-          - devops-engineer
-          - cloud-engineer
+          - nanoscientist
+          - machine-learning-engineer
+          - scattering-physicist
       fail-fast: false             # From Phase 1 feedback
 
     steps:
@@ -90,12 +90,12 @@ jobs:
             Automated CV build from commit ${{ github.sha }}
 
             Generated PDFs:
-            - Software Developer CV
-            - DevOps Engineer CV
-            - Cloud Engineer CV
+            - Nanoscientist CV
+            - Machine Learning Engineer CV
+            - Scattering Physicist CV
           files: |
-            cv-artifacts/cv-software-developer/*.pdf
-            cv-artifacts/cv-devops-engineer/*.pdf
-            cv-artifacts/cv-cloud-engineer/*.pdf
+            cv-artifacts/cv-nanoscientist/*.pdf
+            cv-artifacts/cv-machine-learning-engineer/*.pdf
+            cv-artifacts/cv-scattering-physicist/*.pdf
           draft: false
           prerelease: false
