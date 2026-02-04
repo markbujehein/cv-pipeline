@@ -19,9 +19,8 @@ jobs:
     strategy:
       matrix:
         variant:
-          - nanoscientist
-          - machine-learning-engineer
-          - scattering-physicist
+          - academic-researcher
+          - industrial-scientist
       fail-fast: false             # From Phase 1 feedback
 
     steps:
@@ -95,12 +94,10 @@ jobs:
             Automated CV build from commit ${{ github.sha }}
 
             Generated PDFs:
-            - Nanoscientist CV
-            - Machine Learning Engineer CV
-            - Scattering Physicist CV
+            - Academic Researcher CV (PhD Target)
+            - Industrial Scientist CV (Job Target)
           files: |
-            cv-artifacts/cv-nanoscientist/*.pdf
-            cv-artifacts/cv-machine-learning-engineer/*.pdf
-            cv-artifacts/cv-scattering-physicist/*.pdf
+            cv-artifacts/cv-academic-researcher/*.pdf
+            cv-artifacts/cv-industrial-scientist/*.pdf
           draft: false
           prerelease: false

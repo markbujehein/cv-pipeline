@@ -4,17 +4,14 @@ This repository contains my automated CV generation pipeline, tailored for my ba
 
 ## CV Variants
 
-The pipeline generates three distinct CV variants, each optimized with specific colors and content filtering:
+The pipeline generates two distinct CV variants, each optimized for specific career goals while integrating **Machine Learning** as a foundational skill:
 
-1.  **Nanoscientist** (Leadership & Research focus)
-    -   *Color: Authority Blue*
-    -   *Focus:* Academic achievements, research leadership, and broad scientific expertise.
-2.  **Machine Learning Engineer** (Technical & Applied focus)
-    -   *Color: Energetic Orange*
-    -   *Focus:* GNNs, applied statistics, and computational modeling for scientific discovery.
-3.  **Scattering Physicist** (Experimental & Precision focus)
+1.  **Academic Researcher** (PhD Target)
     -   *Color: Steel Blue*
-    -   *Focus:* Deep expertise in Neutronics, Neutron Compton Scattering (NCS), and hands-on facility experience (ISIS, MAX IV).
+    -   *Focus:* Deep expertise in Neutronics, scattering physics, and hands-on facility experience (ISIS, MAX IV). Optimized for PhD applications.
+2.  **Industrial Scientist** (R&D/Job Target)
+    -   *Color: Authority Blue*
+    -   *Focus:* Applied Nanoscience, computational modeling, and research leadership. Optimized for regular scientist and R&D roles in industry.
 
 ## Automated Workflow
 

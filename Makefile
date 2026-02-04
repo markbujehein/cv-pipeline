@@ -1,6 +1,6 @@
 .PHONY: all clean help test software-developer devops-engineer cloud-engineer ats ats-all
 
-VARIANTS = nanoscientist machine-learning-engineer scattering-physicist
+VARIANTS = academic-researcher industrial-scientist
 DATA_DIR = data
 TEMPLATE_DIR = templates
 OUTPUT_DIR = output/generated
@@ -14,9 +14,8 @@ help:
 	@echo ""
 	@echo "Available targets:"
 	@echo "  all                           - Build all CV variants and run tests"
-	@echo "  nanoscientist                 - Build Nanoscientist CV"
-	@echo "  machine-learning-engineer     - Build Machine Learning Engineer CV"
-	@echo "  scattering-physicist          - Build Scattering Physicist CV"
+	@echo "  academic-researcher           - Build Academic Researcher CV (PhD Target)"
+	@echo "  industrial-scientist          - Build Industrial Scientist CV (Job Target)"
 	@echo "  ats-all                       - Generate all ATS-friendly text versions"
 	@echo "  test                          - Verify all YAML data is rendered in PDFs"
 	@echo "  clean                         - Remove all generated files"
@@ -51,11 +50,9 @@ $(OUTPUT_DIR)/%.pdf: $(OUTPUT_DIR)/%.tex
 	@echo ""
 
 # Individual variant targets
-software-developer: $(OUTPUT_DIR)/software-developer.pdf
+academic-researcher: $(OUTPUT_DIR)/academic-researcher.pdf
 
-devops-engineer: $(OUTPUT_DIR)/devops-engineer.pdf
-
-cloud-engineer: $(OUTPUT_DIR)/cloud-engineer.pdf
+industrial-scientist: $(OUTPUT_DIR)/industrial-scientist.pdf
 
 # Test data completeness
 test: $(foreach v,$(VARIANTS),$(OUTPUT_DIR)/$(v).pdf)

@@ -1,19 +1,19 @@
 - title: "Computational Physics & Chemistry"
   description: "Investigating material properties using computational chemistry and molecular modeling to rationalise experimental results."
-  tags: ["nanoscience"]
+  tags: ["academic-researcher", "industrial-scientist"]
 
 - title: "Experimental Scattering & Neutronics"
   description: "Hands-on expertise with instruments like TOSCA (ISIS) and CoSAXS (MAX IV); Neutron Compton Scattering (NCS) data analysis."
-  tags: ["scattering-physics"]
+  tags: ["academic-researcher"]
 
 - title: "Large-Scale Facility Experience"
   description: "Hands-on experience at international facilities (ISIS, MAX IV), assisting in complex experimental setups and data collection."
-  tags: ["scattering-physics", "nanoscience"]
+  tags: ["academic-researcher", "industrial-scientist"]
 
 - title: "ML for Scientific Discovery"
   description: "Applying Graph Neural Networks (GNNs) to analyze large-scale scientific datasets (ALICE@CERN test-beam data)."
-  tags: ["ml"]
+  tags: ["academic-researcher", "industrial-scientist"]
 
 - title: "Scientific Communication"
   description: "Effective collaboration in international research teams; C2-level English proficiency for technical reporting and primary communication."
-  tags: ["nanoscience", "scattering-physics", "ml"]
+  tags: ["academic-researcher", "industrial-scientist"]

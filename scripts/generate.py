@@ -49,15 +49,15 @@ def load_yaml_data(data_dir: Path) -> Dict[str, Any]:
         raise ValueError(f"Missing required fields in personal.yaml: {', '.join(missing_personal)}")
 
     # Validate taglines exist for all variants
-    required_taglines = ['nanoscientist', 'machine-learning-engineer', 'scattering-physicist']
+    required_taglines = ['academic-researcher', 'industrial-scientist']
     missing_taglines = [t for t in required_taglines if t not in personal['taglines']]
     if missing_taglines:
         raise ValueError(f"Missing taglines in personal.yaml: {', '.join(missing_taglines)}")
 
     return data
 
-def generate_nanoscientist(data: Dict[str, Any]) -> str:
-    """Generate nanoscientist CV."""
+def generate_industrial_scientist(data: Dict[str, Any]) -> str:
+    """Generate industrial scientist CV."""
     personal = data['personal']
     experience = data['experience']
     skills = data['skills']
@@ -115,7 +115,7 @@ def generate_nanoscientist(data: Dict[str, Any]) -> str:
 
     # Personal info
     latex += f"\\name{{{escape_latex(personal['first_name'])} {escape_latex(personal['last_name'])}}}\n"
-    latex += f"\\tagline{{{escape_latex(personal['taglines']['nanoscientist'])}}}\n\n"
+    latex += f"\\tagline{{{escape_latex(personal['taglines']['industrial-scientist'])}}}\n\n"
 
     # Contact info
     latex += "\\personalinfo{%\n"
@@ -171,7 +171,10 @@ def generate_nanoscientist(data: Dict[str, Any]) -> str:
     latex += "\n\\divider\\medskip\n\n"
 
     # Programming & Computation
-    latex += "\\cvsection{Computation}\n\n"
+    latex += "\\cvsection{Computation \\& ML}\n\n"
+    for skill in skills['Machine Learning & Statistics']:
+        latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
+    latex += "\n\\divider\\smallskip\n\n"
     for skill in skills['Programming & Computation']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
@@ -196,141 +199,8 @@ def generate_nanoscientist(data: Dict[str, Any]) -> str:
 
     return latex
 
-def generate_machine_learning_engineer(data: Dict[str, Any]) -> str:
-    """Generate ML engineer CV."""
-    personal = data['personal']
-    experience = data['experience']
-    skills = data['skills']
-    strengths = data['strengths']
-    education = data['education']
-    certifications = data.get('certifications', [])
-
-    latex = r'''\documentclass[10pt,a4paper,withhyper]{altacv}
-
-\geometry{left=1cm,right=1cm,top=1.5cm,bottom=1.5cm,columnsep=1.5cm}
-
-\usepackage{paracol}
-
-\iftutex
-  \setmainfont{Lato}
-  \setsansfont{Lato}
-  \renewcommand{\familydefault}{\sfdefault}
-\else
-  \usepackage[defaultsans]{lato}
-  \renewcommand{\familydefault}{\sfdefault}
-\fi
-
-% DEVELOPER ADVOCATE: Approachable & Engaging
-\definecolor{SlateGrey}{HTML}{2E2E2E}
-\definecolor{LightGrey}{HTML}{666666}
-\definecolor{EnergeticOrange}{HTML}{ff6b35}
-\definecolor{FriendlyTeal}{HTML}{00d9ff}
-\definecolor{CommunityPurple}{HTML}{7c3aed}
-\colorlet{name}{EnergeticOrange}
-\colorlet{tagline}{CommunityPurple}
-\colorlet{heading}{EnergeticOrange}
-\colorlet{headingrule}{FriendlyTeal}
-\colorlet{subheading}{CommunityPurple}
-\colorlet{accent}{FriendlyTeal}
-\colorlet{emphasis}{SlateGrey}
-\colorlet{body}{LightGrey}
-
-\renewcommand{\namefont}{\Huge\sffamily\bfseries}
-\renewcommand{\personalinfofont}{\small}
-\renewcommand{\cvsectionfont}{\Large\sffamily\bfseries}
-\renewcommand{\cvsubsectionfont}{\large\sffamily}
-
-\renewcommand{\cvItemMarker}{{\small\textbullet}}
-\renewcommand{\cvRatingMarker}{\faCircle}
-
-\renewcommand{\linkedin}[1]{%
-  \printinfo{\faLinkedin}{LinkedIn}[https://linkedin.com/in/#1]%
-}
-
-\begin{document}
-'''
-
-    # Personal info
-    latex += f"\\name{{{escape_latex(personal['first_name'])} {escape_latex(personal['last_name'])}}}\n"
-    latex += f"\\tagline{{{escape_latex(personal['taglines']['machine-learning-engineer'])}}}\n\n"
-
-    latex += "\\personalinfo{%\n"
-    latex += f"  \\email{{{escape_latex(personal['email'])}}}\n"
-    latex += f"  \\phone{{{escape_latex(personal['phone'])}}}\n"
-    latex += f"  \\location{{{escape_latex(personal['location'])}}}\n"
-
-    website = personal['website'].replace('https://', '').replace('http://', '')
-    latex += f"  \\homepage{{{escape_latex(website)}}}\n"
-
-    linkedin_id = personal['linkedin'].replace('https://www.linkedin.com/in/', '').replace('https://linkedin.com/in/', '').replace('/', '')
-    latex += f"  \\linkedin{{{escape_latex(linkedin_id)}}}\n"
-
-    github_user = personal['github'].replace('https://github.com/', '').replace('/', '')
-    latex += f"  \\github{{{escape_latex(github_user)}}}\n"
-    latex += "}\n\n"
-
-    latex += "\\makecvheader\n\n"
-    latex += "\\columnratio{0.6}\n\n"
-    latex += "\\begin{paracol}{2}\n\n"
-
-    # Research Summary
-    latex += "\\cvsection{Research Summary}\n\n"
-    latex += f"{escape_latex(strengths[0]['description'])}\n\n"
-    latex += "\\medskip\n\n"
-
-    # Machine Learning & Experience
-    latex += "\\cvsection{ML \\& Experience}\n\n"
-    for job in experience[:3]:
-        latex += f"\\cvevent{{{escape_latex(job['title'])}}}{{{escape_latex(job['company'])}}}"
-        latex += f"{{{job['start_date']}--{job['end_date']}}}{{{escape_latex(job['location'])}}}\n"
-        latex += "\\begin{itemize}\n"
-        for achievement in job["achievements"][:4]:
-            latex += f"\\item {escape_latex(achievement)}\n"
-        latex += "\\end{itemize}\n\n"
-        latex += "\\divider\n\n"
-
-    latex += "\\switchcolumn\n\n"
-
-    # What I Bring (first 3 strengths)
-    latex += "\\cvsection{What I Bring}\n\n"
-    for strength in strengths[:3]:
-        latex += f"\\cvachievement{{\\faHeart}}{{{escape_latex(strength['title'])}}}{{{escape_latex(strength['description'])}}}\n\n"
-        if strength != strengths[2]:
-            latex += "\\divider\n\n"
-
-    # Machine Learning Stack
-    latex += "\\cvsection{ML Stack}\n\n"
-    for skill in skills['Machine Learning & Statistics']:
-        latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
-    latex += "\n\\divider\\smallskip\n\n"
-
-    for skill in skills['Programming & Computation']:
-        latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
-    latex += "\n"
-
-    # Education
-    latex += "\\cvsection{Education}\n\n"
-    for edu in education:
-        degree = escape_latex(edu['degree'])
-        if edu.get('specialization'):
-            degree += f" ({escape_latex(edu['specialization'])})"
-        latex += f"\\cvevent{{{degree}}}{{{escape_latex(edu['institution'])}}}"
-        latex += f"{{{edu['start_date']}--{edu['end_date']}}}{{{escape_latex(edu['location'])}}}\n\n"
-        if edu.get('notes'):
-            latex += f"{escape_latex(edu['notes'])}\n\n"
-
-    # Certifications (first 5)
-    latex += "\\cvsection{Certifications}\n\n"
-    for cert in certifications[:4]:
-        latex += f"\\cvtag{{{escape_latex(cert['name'])}}}\n"
-
-    latex += "\n\\end{paracol}\n\n"
-    latex += "\\end{document}\n"
-
-    return latex
-
-def generate_scattering_physicist(data: Dict[str, Any]) -> str:
-    """Generate scattering physicist CV."""
+def generate_academic_researcher(data: Dict[str, Any]) -> str:
+    """Generate academic researcher CV."""
     personal = data['personal']
     experience = data['experience']
     skills = data['skills']
@@ -387,7 +257,7 @@ def generate_scattering_physicist(data: Dict[str, Any]) -> str:
 
     # Personal info
     latex += f"\\name{{{escape_latex(personal['first_name'])} {escape_latex(personal['last_name'])}}}\n"
-    latex += f"\\tagline{{{escape_latex(personal['taglines']['scattering-physicist'])}}}\n\n"
+    latex += f"\\tagline{{{escape_latex(personal['taglines']['academic-researcher'])}}}\n\n"
 
     latex += "\\personalinfo{%\n"
     latex += f"  \\email{{{escape_latex(personal['email'])}}}\n"
@@ -439,7 +309,10 @@ def generate_scattering_physicist(data: Dict[str, Any]) -> str:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
     latex += "\n\\divider\\smallskip\n\n"
 
-    latex += "\\textbf{Computation}\n\n"
+    latex += "\\textbf{Computational \\& ML Stack}\n\n"
+    for skill in skills['Machine Learning & Statistics']:
+        latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
+    latex += "\n\\divider\\smallskip\n\n"
     for skill in skills['Programming & Computation']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
@@ -468,7 +341,7 @@ def main():
         epilog='Generates LaTeX CV from YAML data with built-in validation'
     )
     parser.add_argument('--variant', required=True,
-                       choices=['nanoscientist', 'machine-learning-engineer', 'scattering-physicist'],
+                       choices=['academic-researcher', 'industrial-scientist'],
                        help='CV variant to generate')
     parser.add_argument('--data-dir', required=True, type=Path,
                        help='Directory containing YAML data files')
@@ -489,9 +362,8 @@ def main():
 
         # Generate based on variant
         generators = {
-            'nanoscientist': generate_nanoscientist,
-            'machine-learning-engineer': generate_machine_learning_engineer,
-            'scattering-physicist': generate_scattering_physicist,
+            'industrial-scientist': generate_industrial_scientist,
+            'academic-researcher': generate_academic_researcher,
         }
 
         print(f"Generating LaTeX for variant: {args.variant}")

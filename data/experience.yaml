@@ -3,7 +3,7 @@
   location: "Copenhagen / Oxfordshire, UK"
   start_date: "2025"
   end_date: "present"
-  tags: ["nanoscience", "scattering-physics"]
+  tags: ["academic-researcher", "industrial-scientist"]
   achievements:
     - "Collaborating with Dr. Matthew Krzystyniak (ISIS) on analysis of Neutron Compton Scattering (NCS) and transmission data from VESUVIO"
     - "Working with Dr. Svemir Rudic (ISIS) on neutron moderators, performing experiments on the TOSCA spectrometer"
@@ -15,7 +15,7 @@
   location: "Lund, Sweden / Oxfordshire, UK"
   start_date: "2024"
   end_date: "present"
-  tags: ["scattering-physics", "nanoscience"]
+  tags: ["academic-researcher"]
   achievements:
     - "Oct 2025: Assisted Prof. Heloisa Bordallo at CoSAXS (MAX IV) for one day of experiments; personally requested for technical support"
     - "Dec 2025: Organized samples for Prof. Bordallo's PhD student's POLARIS experiment at ISIS; collaborated with Dr. Matthew Krzystyniak for an on-site VESUVIO instrument orientation"
@@ -27,7 +27,7 @@
   location: "Copenhagen"
   start_date: "2024"
   end_date: "2024"
-  tags: ["ml", "statistics"]
+  tags: ["academic-researcher", "industrial-scientist"]
   achievements:
     - "Developed and trained a Graphical Neural Network (GNN) on test-beam data from ALICE@CERN"
     - "Completed as part of the Applied Statistics & Machine Learning coursework under Assoc. Prof. Troels Petersen"
@@ -37,7 +37,7 @@
   location: "Copenhagen"
   start_date: "2024"
   end_date: "present"
-  tags: ["nanoscience"]
+  tags: ["industrial-scientist"]
   achievements:
     - "Engaged in political and organizational activities representing STEM students"
 
@@ -46,6 +46,6 @@
   location: "Aarhus, Denmark"
   start_date: "05/2026"
   end_date: "05/2026"
-  tags: ["nanoscience", "scattering-physics"]
+  tags: ["academic-researcher"]
   achievements:
     - "Presenting MSc thesis results on novel neutron moderator materials through a poster session and short oral presentation"

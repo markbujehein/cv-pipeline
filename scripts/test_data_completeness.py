@@ -89,12 +89,8 @@ def check_skills(data: Dict, pdf_text: str, variant: str) -> List[str]:
     issues = []
     pdf_normalized = normalize_text(pdf_text)
 
-    # Categories to check based on variant
-    categories_to_check = []
-    if variant == 'machine-learning-engineer':
-        categories_to_check = ['Machine Learning & Statistics', 'Programming & Computation']
-    else:  # nanoscientist and scattering-physicist
-        categories_to_check = ['Scientific Expertise', 'Programming & Computation']
+    # Both variants now include Scientific Expertise, ML, and Computation
+    categories_to_check = ['Scientific Expertise', 'Machine Learning & Statistics', 'Programming & Computation']
 
     for category in categories_to_check:
         if category in data['skills']:
@@ -296,7 +292,7 @@ def main():
     if args.variant:
         variants = [args.variant]
     else:
-        variants = ['nanoscientist', 'machine-learning-engineer', 'scattering-physicist']
+        variants = ['academic-researcher', 'industrial-scientist']
 
     print("CV Data Completeness Test")
     print("="*60)
