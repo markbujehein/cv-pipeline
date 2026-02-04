@@ -49,3 +49,37 @@
   tags: ["academic-researcher"]
   achievements:
     - "Presenting MSc thesis results on novel neutron moderator materials through a poster session and short oral presentation"
+
+- title: "Treasurer (Financial Officer)"
+  company: "Studentersamfundet (Student Union)"
+  location: "Aalborg, Denmark"
+  start_date: "2021"
+  end_date: "2023"
+  tags: ["industrial-scientist", "leadership", "financial"]
+  achievements:
+    - "Managed an annual budget exceeding DKK 1.5 million for a large student organization"
+    - "Oversaw revenue from 6-7 student bars and monitored the organization's Business Group"
+    - "Stabilized the economy during a difficult financial year by digitizing the student magazine"
+    - "Collaborated with the board to refactor the 15-page budget for improved transparency"
+
+- title: "Kitchen & Event Volunteer"
+  company: "Østerskov Efterskole"
+  location: "Hobro, Denmark"
+  start_date: "2011"
+  end_date: "2016"
+  tags: ["volunteer", "leadership"]
+  achievements:
+    - "Fulfilled over 3-4 weeks of mandatory full-time kitchen duty annually, feeding students and staff"
+    - "Proactively volunteered for weekend shifts and assisted with private school events"
+    - "Progression from mandatory duty to university leadership roles (running cabin trip kitchens)"
+
+- title: "Positions of Trust (Policy & Representation)"
+  company: "Various Organizations"
+  location: "Denmark"
+  start_date: "2023"
+  end_date: "present"
+  tags: ["academic-researcher", "industrial-scientist", "trust"]
+  achievements:
+    - "Member of the Board of Representatives, IDA (The Danish Society of Engineers), 2023-2025"
+    - "Member of the Higher Education and Research Committee, IDA, 2024-2025"
+    - "Member of the National Board, Radikale Venstre (The Danish Social Liberal Party)"

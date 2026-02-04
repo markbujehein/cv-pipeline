@@ -145,7 +145,11 @@ def generate_industrial_scientist(data: Dict[str, Any]) -> str:
 
     # Research & Project Experience
     latex += "\\cvsection{Research \\& Projects}\n\n"
-    for job in experience[:3]:
+    research_exp = [e for e in experience if 'academic-researcher' in e['tags'] or 'industrial-scientist' in e['tags']]
+    # Filter out entries that are primarily leadership/trust for the main section
+    primary_research = [e for e in research_exp if 'leadership' not in e['tags'] and 'trust' not in e['tags']]
+    
+    for job in primary_research[:3]:
         latex += f"\\cvevent{{{escape_latex(job['title'])}}}{{{escape_latex(job['company'])}}}"
         latex += f"{{{job['start_date']}--{job['end_date']}}}{{{escape_latex(job['location'])}}}\n"
         latex += "\\begin{itemize}\n"
@@ -153,6 +157,20 @@ def generate_industrial_scientist(data: Dict[str, Any]) -> str:
             latex += f"\\item {escape_latex(achievement)}\n"
         latex += "\\end{itemize}\n\n"
         latex += "\\divider\n\n"
+
+    # Leadership & Volunteering
+    latex += "\\cvsection{Leadership \\& Impact}\n\n"
+    leadership_exp = [e for e in experience if 'leadership' in e['tags'] or 'volunteer' in e['tags'] or 'trust' in e['tags']]
+    for job in leadership_exp[:2]:
+        latex += f"\\cvevent{{{escape_latex(job['title'])}}}{{{escape_latex(job['company'])}}}"
+        latex += f"{{{job['start_date']}--{job['end_date']}}}{{{escape_latex(job['location'])}}}\n"
+        latex += "\\begin{itemize}\n"
+        # Fewer achievements for leadership to save space
+        for achievement in job["achievements"][:2]:
+            latex += f"\\item {escape_latex(achievement)}\n"
+        latex += "\\end{itemize}\n\n"
+        if job != leadership_exp[1]:
+            latex += "\\divider\n\n"
 
     # Switch to sidebar
     latex += "\\switchcolumn\n\n"
@@ -283,9 +301,11 @@ def generate_academic_researcher(data: Dict[str, Any]) -> str:
     latex += f"{escape_latex(strengths[0]['description'])}\n\n"
     latex += "\\medskip\n\n"
 
-    # Infrastructure Experience
-    latex += "\\cvsection{Infrastructure Experience}\n\n"
-    for job in experience[:3]:
+    # Infrastructure & Research Experience
+    latex += "\\cvsection{Research \\& Infrastructure}\n\n"
+    primary_research = [e for e in experience if 'academic-researcher' in e['tags'] and 'trust' not in e['tags']]
+    
+    for job in primary_research[:3]:
         latex += f"\\cvevent{{{escape_latex(job['title'])}}}{{{escape_latex(job['company'])}}}"
         latex += f"{{{job['start_date']}--{job['end_date']}}}{{{escape_latex(job['location'])}}}\n"
         latex += "\\begin{itemize}\n"
@@ -293,6 +313,19 @@ def generate_academic_researcher(data: Dict[str, Any]) -> str:
             latex += f"\\item {escape_latex(achievement)}\n"
         latex += "\\end{itemize}\n\n"
         latex += "\\divider\n\n"
+
+    # Positions of Trust & Leadership
+    latex += "\\cvsection{Leadership \\& Trust}\n\n"
+    leadership_exp = [e for e in experience if 'trust' in e['tags'] or 'leadership' in e['tags']]
+    for job in leadership_exp[:2]:
+        latex += f"\\cvevent{{{escape_latex(job['title'])}}}{{{escape_latex(job['company'])}}}"
+        latex += f"{{{job['start_date']}--{job['end_date']}}}{{{escape_latex(job['location'])}}}\n"
+        latex += "\\begin{itemize}\n"
+        for achievement in job["achievements"][:2]:
+            latex += f"\\item {escape_latex(achievement)}\n"
+        latex += "\\end{itemize}\n\n"
+        if job != leadership_exp[1]:
+            latex += "\\divider\n\n"
 
     latex += "\\switchcolumn\n\n"
 
