@@ -89,19 +89,20 @@ def check_skills(data: Dict, pdf_text: str, variant: str) -> List[str]:
     issues = []
     pdf_normalized = normalize_text(pdf_text)
 
-    # Check Scientific Expertise
-    if 'Scientific Expertise' in data['skills']:
-        for skill in data['skills']['Scientific Expertise']:
-            skill_normalized = normalize_text(skill)
-            if skill_normalized not in pdf_normalized:
-                issues.append(f"Missing scientific expertise: {skill}")
+    # Categories to check based on variant
+    categories_to_check = []
+    if variant == 'machine-learning-engineer':
+        categories_to_check = ['Machine Learning & Statistics', 'Programming & Computation']
+    else:  # nanoscientist and scattering-physicist
+        categories_to_check = ['Scientific Expertise', 'Programming & Computation']
 
-    # Check Programming & Computation
-    if 'Programming & Computation' in data['skills']:
-        for skill in data['skills']['Programming & Computation']:
-            skill_normalized = normalize_text(skill)
-            if skill_normalized not in pdf_normalized:
-                issues.append(f"Missing computation skill: {skill}")
+    for category in categories_to_check:
+        if category in data['skills']:
+            for skill in data['skills'][category]:
+                skill_normalized = normalize_text(skill)
+                # Skip skills that might be too long or complex for simple substring matching
+                if skill_normalized not in pdf_normalized:
+                    issues.append(f"Missing {category} skill: {skill}")
 
     return issues
 
