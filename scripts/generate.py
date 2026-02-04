@@ -49,7 +49,7 @@ def load_yaml_data(data_dir: Path) -> Dict[str, Any]:
         raise ValueError(f"Missing required fields in personal.yaml: {', '.join(missing_personal)}")
 
     # Validate taglines exist for all variants
-    required_taglines = ['software-developer', 'devops-engineer', 'cloud-engineer']
+    required_taglines = ['nanoscientist', 'machine-learning-engineer', 'scattering-physicist']
     missing_taglines = [t for t in required_taglines if t not in personal['taglines']]
     if missing_taglines:
         raise ValueError(f"Missing taglines in personal.yaml: {', '.join(missing_taglines)}")
