@@ -7,6 +7,7 @@ on:
       - 'data/**'                  # YAML data files
       - 'templates/**'             # Jinja2 templates
       - 'scripts/generate.py'      # Generation script
+      - 'scripts/test_data_completeness.py' # Test script
       - '.github/workflows/cv-build.yml'
   workflow_dispatch:               # Manual trigger
 
