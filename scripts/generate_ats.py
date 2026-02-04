@@ -152,17 +152,13 @@ def generate_ats_cv(data: Dict[str, Any], variant: str) -> str:
 
     # Map variants to tagline keys and role tags
     variant_config = {
-        'software-developer': {
-            'tagline_key': 'software-developer',
-            'role_tags': ['development', 'technical']
+        'industrial-scientist': {
+            'tagline_key': 'industrial-scientist',
+            'role_tags': ['industrial-scientist', 'nanoscience', 'leadership']
         },
-        'devops-engineer': {
-            'tagline_key': 'devops-engineer',
-            'role_tags': ['devops', 'automation']
-        },
-        'cloud-engineer': {
-            'tagline_key': 'cloud-engineer',
-            'role_tags': ['cloud', 'infrastructure']
+        'academic-researcher': {
+            'tagline_key': 'academic-researcher',
+            'role_tags': ['academic-researcher', 'scattering-physics', 'trust']
         }
     }
 
@@ -194,7 +190,7 @@ def main():
         epilog='Generates plain text CVs optimized for Applicant Tracking Systems'
     )
     parser.add_argument('--variant', required=True,
-                       choices=['software-developer', 'devops-engineer', 'cloud-engineer'],
+                       choices=['academic-researcher', 'industrial-scientist'],
                        help='CV variant to generate')
     parser.add_argument('--data-dir', required=True, type=Path,
                        help='Directory containing YAML data files')

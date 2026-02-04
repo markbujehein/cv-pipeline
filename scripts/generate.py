@@ -82,25 +82,25 @@ def generate_industrial_scientist(data: Dict[str, Any]) -> str:
   \renewcommand{\familydefault}{\sfdefault}
 \fi
 
-% ENGINEERING MANAGER: Authority & Trust
+% INDUSTRIAL SCIENTIST: Innovation & Creativity (Restored Psychology)
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
-\definecolor{AuthorityBlue}{HTML}{1e3a8a}
-\definecolor{TrustBlue}{HTML}{0f62fe}
-\definecolor{LeadershipGold}{HTML}{d4af37}
-\colorlet{name}{black}
-\colorlet{tagline}{AuthorityBlue}
-\colorlet{heading}{AuthorityBlue}
-\colorlet{headingrule}{TrustBlue}
-\colorlet{subheading}{AuthorityBlue}
-\colorlet{accent}{TrustBlue}
+\definecolor{EnergeticOrange}{HTML}{ff6b35}
+\definecolor{FriendlyTeal}{HTML}{00d9ff}
+\definecolor{CommunityPurple}{HTML}{7c3aed}
+\colorlet{name}{EnergeticOrange}
+\colorlet{tagline}{CommunityPurple}
+\colorlet{heading}{EnergeticOrange}
+\colorlet{headingrule}{FriendlyTeal}
+\colorlet{subheading}{CommunityPurple}
+\colorlet{accent}{FriendlyTeal}
 \colorlet{emphasis}{SlateGrey}
 \colorlet{body}{LightGrey}
 
-\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
-\renewcommand{\personalinfofont}{\footnotesize}
-\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
-\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\namefont}{\Huge\sffamily\bfseries}
+\renewcommand{\personalinfofont}{\small}
+\renewcommand{\cvsectionfont}{\Large\sffamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\sffamily}
 
 \renewcommand{\cvItemMarker}{{\small\textbullet}}
 \renewcommand{\cvRatingMarker}{\faCircle}
@@ -243,7 +243,7 @@ def generate_academic_researcher(data: Dict[str, Any]) -> str:
   \renewcommand{\familydefault}{\sfdefault}
 \fi
 
-% PLATFORM ENGINEER: Stability & Precision
+% ACADEMIC RESEARCHER: Stability & Precision (Restored Psychology)
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
 \definecolor{SteelBlue}{HTML}{4682b4}

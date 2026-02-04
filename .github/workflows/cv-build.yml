@@ -85,7 +85,15 @@ jobs:
         id: date
         run: echo "date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_OUTPUT
 
+      - name: Generate ATS-friendly versions
+        run: |
+          mkdir -p cv-artifacts/cv-academic-researcher
+          mkdir -p cv-artifacts/cv-industrial-scientist
+          python3 scripts/generate_ats.py --variant academic-researcher --data-dir data/ --output cv-artifacts/cv-academic-researcher/academic-researcher.txt
+          python3 scripts/generate_ats.py --variant industrial-scientist --data-dir data/ --output cv-artifacts/cv-industrial-scientist/industrial-scientist.txt
+
       - name: Create Release
+        id: create_release
         uses: softprops/action-gh-release@v1
         with:
           tag_name: cv-${{ steps.date.outputs.date }}
@@ -96,8 +104,13 @@ jobs:
             Generated PDFs:
             - Academic Researcher CV (PhD Target)
             - Industrial Scientist CV (Job Target)
+            Generated ATS-friendly TXT:
+            - Academic Researcher CV (PhD Target)
+            - Industrial Scientist CV (Job Target)
           files: |
             cv-artifacts/cv-academic-researcher/*.pdf
             cv-artifacts/cv-industrial-scientist/*.pdf
+            cv-artifacts/cv-academic-researcher/*.txt
+            cv-artifacts/cv-industrial-scientist/*.txt
           draft: false
           prerelease: false
