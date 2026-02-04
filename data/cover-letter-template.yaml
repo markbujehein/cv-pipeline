@@ -1,91 +1,73 @@
 # Cover Letter Template Data
 #
-# This file contains your cover letter building blocks.
-# The generator will combine these based on the role you're applying for.
+# This file contains building blocks for specialized scientific and ML roles.
+# The generator combines these based on the role and variant.
 
-# Your story - why you're in tech
+# Your story - why you're in the intersection of physics and computation
 origin_story:
-  career_changer: "After 5 years in project management, I transitioned to software engineering because I wanted to build solutions, not just manage them. I completed an intensive bootcamp and have spent the past year building production applications."
+  nanoscientist: "My journey in Nanoscience has been driven by a fascination with the molecular foundations of matter. At the Niels Bohr Institute, I've specialized in X-ray and Neutron science, developing a deep appreciation for how large-scale facilities can unlock the secrets of material properties through high-precision scattering experiments."
 
-  bootcamp_grad: "I discovered my passion for software development through a coding bootcamp, where I built 5 full-stack applications and fell in love with solving complex problems through code."
+  ml_scientist: "I believe the next frontier of scientific discovery lies at the intersection of physics and machine learning. My background in Nanoscience, combined with applied statistics and work with Graphical Neural Networks (GNNs) for CERN's ALICE experiment, has equipped me with a unique perspective on using data-driven models to accelerate physical research."
 
-  student: "Throughout my Computer Science studies, I've been driven by curiosity about how technology can solve real-world problems. My coursework and projects have given me a strong foundation in software development principles."
+  scattering_physicist: "My specialization in Neutron and X-ray scattering is built on hands-on experience at international facilities like ISIS and MAX IV. From investigating novel neutron moderators to analyzing complex spectroscopy data, I thrive in experimental environments that require both technical precision and deep theoretical understanding."
 
-  self_taught: "I'm a self-taught developer who learned programming through hundreds of hours of online courses, building projects, and contributing to open source. My non-traditional path has taught me resilience and how to learn quickly."
-
-# Why you're excited about THIS company (customize per application)
+# Why you're excited about THIS company/institute
 company_excitement:
-  mission_driven: "I'm particularly excited about {COMPANY}'s mission to {MISSION}. This aligns perfectly with my values and experience in {RELEVANT_AREA}."
+  research_institute: "I've long admired {INSTITUTE}'s contributions to {RESEARCH_AREA}. The opportunity to contribute to {SPECIFIC_PROJECT} and work within your world-class facility aligns perfectly with my goal of advancing {SCIENTIFIC_DOMAIN} through collaborative research."
 
-  technical_challenges: "I'm drawn to {COMPANY} because of the technical challenges you're solving around {TECHNICAL_AREA}. Working on {SPECIFIC_PRODUCT/PROJECT} would allow me to apply my skills in {YOUR_SKILLS}."
+  deep_tech: "I am drawn to {COMPANY}'s innovative approach to {TECHNICAL_PROBLEM}. Your work in {FIELD} represents exactly the kind of high-impact environment where I can apply my dual expertise in experimental nanoscience and computational modeling."
 
-  product_user: "As a longtime user of {PRODUCT}, I've always admired how {COMPANY} approaches {SPECIFIC_ASPECT}. I'd love to contribute to building features that I and millions of others rely on daily."
+  instrumentation: "As a researcher who has seen the power of instruments like TOSCA and CoSAXS first-hand, I am incredibly excited about {COMPANY}'s development of {INSTRUMENT/TECHNOLOGY}. I would love to bring my experimental insight to help optimize and push the boundaries of this technology."
 
-  growth_opportunity: "I'm excited about {COMPANY}'s commitment to {LEARNING_CULTURE/MENTORSHIP/GROWTH}. As someone eager to learn and grow, working alongside {SPECIFIC_TEAM} would accelerate my development as an engineer."
-
-  culture: "Your company culture of {CULTURE_ASPECT} resonates deeply with me. I thrive in environments where {YOUR_WORK_STYLE}."
-
-# Your key strengths (choose 2-3 per letter)
+# Your key scientific and technical strengths
 strengths:
-  fast_learner:
-    hook: "I learn quickly and adapt to new technologies rapidly."
-    proof: "In my current role, I learned {TECHNOLOGY} and contributed production code within {TIMEFRAME}."
+  beam_time_expert:
+    hook: "I have extensive hands-on experience at large-scale neutron and X-ray facilities."
+    proof: "I have assisted in experiments at ISIS (TOSCA, POLARIS) and MAX IV (CoSAXS), managing sample preparation, instrument orientation, and high-intensity data collection."
 
-  problem_solver:
-    hook: "I excel at breaking down complex problems into manageable solutions."
-    proof: "When faced with {SPECIFIC_PROBLEM}, I {YOUR_APPROACH}, resulting in {MEASURABLE_OUTCOME}."
+  computational_physicist:
+    hook: "I bridge the gap between experimental results and theoretical models."
+    proof: "For my MSc thesis, I've integrated experimental scattering data with computational chemistry and neutronics simulations to characterize novel moderator materials."
 
-  collaborative:
-    hook: "I believe the best solutions come from diverse perspectives and strong collaboration."
-    proof: "I actively participate in code reviews, provide constructive feedback, and have mentored {NUMBER} junior developers."
+  ml_for_science:
+    hook: "I apply advanced machine learning techniques to complex physical datasets."
+    proof: "I developed Graphical Neural Networks (GNNs) for ALICE@CERN test-beam data, achieving high accuracy in particle identification and track reconstruction."
 
-  quality_focused:
-    hook: "I'm committed to writing clean, maintainable code with comprehensive testing."
-    proof: "I increased test coverage from {BEFORE}% to {AFTER}%, catching {NUMBER} critical bugs before production."
+  independent_researcher:
+    hook: "I take full ownership of my research projects, from design to presentation."
+    proof: "I am presenting my MSc results at the DanScatt 2026 conference and have collaborated directly with facility scientists at ISIS and NBI to drive my thesis research forward."
 
-  user_centric:
-    hook: "I always consider the end-user experience when building features."
-    proof: "By focusing on user feedback, I improved {METRIC} by {PERCENTAGE}, directly impacting {BUSINESS_OUTCOME}."
+  collaborative_leader:
+    hook: "I thrive in multidisciplinary teams and international collaborations."
+    proof: "My research involves active collaboration with Dr. Matthew Krzystyniak (ISIS) and Assoc. Prof. Heloisa Bordallo, requiring seamless communication across institutions and domains."
 
-  ownership:
-    hook: "I take full ownership of projects from concept to deployment."
-    proof: "I led {PROJECT} from initial design through launch, resulting in {OUTCOME}."
-
-  technical_depth:
-    hook: "I invest time in understanding technologies deeply, not just surface-level."
-    proof: "I dove deep into {TECHNOLOGY}, which allowed me to optimize {SPECIFIC_ASPECT} and achieve {RESULT}."
-
-# Relevant projects/experiences (customize with your actual work)
+# Relevant achievements mapped to your profile
 relevant_experience:
-  - role: "DevOps Engineer"
-    relevance: "building and maintaining CI/CD pipelines"
-    achievement: "Automated deployment pipeline reducing release time from 4 hours to 15 minutes"
-    skills: "GitHub Actions, Docker, Kubernetes"
+  - role: "Nanoscientist"
+    relevance: "researching novel materials and leading collaborations"
+    achievement: "Characterized thymol and p-cymene as neutron moderator materials through combined experimental and computational methods"
+    skills: "Nanoscience, Computational Chemistry, Beam Time Management"
 
-  - role: "Full-Stack Developer"
-    relevance: "building scalable web applications"
-    achievement: "Built platform serving 50K+ users with 99.9% uptime"
-    skills: "React, Node.js, PostgreSQL, AWS"
+  - role: "ML Engineer"
+    relevance: "developing data-driven models for physical systems"
+    achievement: "Built GNN architectures for high-energy physics data, demonstrating the power of deep learning in scientific classification tasks"
+    skills: "Python, GNNs, Applied Statistics, Data Science"
 
-  - role: "Cloud Engineer"
-    relevance: "managing cloud infrastructure"
-    achievement: "Designed multi-region AWS architecture supporting 1M+ daily users"
-    skills: "AWS, Terraform, CloudFormation"
+  - role: "Scattering Physicist"
+    relevance: "operating high-precision instruments and data analysis"
+    achievement: "Assisted in multiple beam times at ISIS and MAX IV, including sample management for POLARIS and spectroscopy analysis on TOSCA/VESUVIO"
+    skills: "Neutronics, NCS, Muon Scattering, Spectrometry"
 
 # Closing - what you bring to the team
 value_proposition:
-  junior_energy: "While I'm early in my career, I bring fresh perspectives, enthusiasm for learning, and a strong work ethic. I'm ready to contribute from day one while growing into a valuable team member."
+  scientific_rigor: "I bring a combination of experimental rigor and computational agility. With my upcoming MSc completion and experience at top-tier facilities, I am ready to contribute immediately to {ORG}'s research mission."
 
-  unique_background: "My background in {PREVIOUS_FIELD} gives me unique insights into {HOW_IT_HELPS}. I bring both technical skills and {SOFT_SKILL} that I've developed throughout my career."
+  interdisciplinary_edge: "My ability to speak both the language of experimental physics and machine learning allows me to bridge silos and find innovative solutions to complex R&D challenges."
 
-  proven_track_record: "My track record of {SPECIFIC_ACHIEVEMENT} demonstrates my ability to {KEY_SKILL}. I'm confident I can bring this same drive and capability to {COMPANY}."
-
-  growth_mindset: "I'm someone who actively seeks feedback, embraces challenges, and is always looking to improve. I believe in continuous learning and would thrive in your team's environment."
+  proven_performer: "My track record of presenting at conferences like DanScatt and preparing for a high-profile Viva Voce demonstrates my ability to deliver and communicate results at the highest levels of academia."
 
 # Call to action
 closing:
-  direct: "I'd love to discuss how my experience with {RELEVANT_SKILLS} can contribute to {TEAM/PROJECT}. I'm available for a conversation at your convenience."
+  direct: "I'd love to discuss how my experience with scattering physics and ML can contribute to {TEAM}. I'm available for a conversation at your convenience."
 
-  enthusiastic: "I'm excited about the possibility of joining {COMPANY} and contributing to {SPECIFIC_GOAL}. I'd welcome the opportunity to discuss how I can add value to your team."
-
-  humble_confident: "I'm confident my skills in {AREAS} align well with this role, and I'm eager to learn more about {SPECIFIC_ASPECT}. I'd appreciate the chance to discuss how I can contribute to your team's success."
+  enthusiastic: "I'm incredibly excited about the possibility of joining {ORG} and contributing to your work in {AREA}. I'd welcome the opportunity to discuss how I can add value to your team."

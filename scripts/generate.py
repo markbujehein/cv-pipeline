@@ -149,7 +149,7 @@ def generate_nanoscientist(data: Dict[str, Any]) -> str:
         latex += f"\\cvevent{{{escape_latex(job['title'])}}}{{{escape_latex(job['company'])}}}"
         latex += f"{{{job['start_date']}--{job['end_date']}}}{{{escape_latex(job['location'])}}}\n"
         latex += "\\begin{itemize}\n"
-        for achievement in job["achievements"][:2]:
+        for achievement in job["achievements"][:4]:
             latex += f"\\item {escape_latex(achievement)}\n"
         latex += "\\end{itemize}\n\n"
         latex += "\\divider\n\n"
@@ -183,6 +183,8 @@ def generate_nanoscientist(data: Dict[str, Any]) -> str:
             degree += f" ({escape_latex(edu['specialization'])})"
         latex += f"\\cvevent{{{degree}}}{{{escape_latex(edu['institution'])}}}"
         latex += f"{{{edu['start_date']}--{edu['end_date']}}}{{{escape_latex(edu['location'])}}}\n\n"
+        if edu.get('notes'):
+            latex += f"{escape_latex(edu['notes'])}\n\n"
 
     # Certifications
     latex += "\\cvsection{Certifications}\n\n"
@@ -282,7 +284,7 @@ def generate_machine_learning_engineer(data: Dict[str, Any]) -> str:
         latex += f"\\cvevent{{{escape_latex(job['title'])}}}{{{escape_latex(job['company'])}}}"
         latex += f"{{{job['start_date']}--{job['end_date']}}}{{{escape_latex(job['location'])}}}\n"
         latex += "\\begin{itemize}\n"
-        for achievement in job["achievements"][:2]:
+        for achievement in job["achievements"][:4]:
             latex += f"\\item {escape_latex(achievement)}\n"
         latex += "\\end{itemize}\n\n"
         latex += "\\divider\n\n"
@@ -314,6 +316,8 @@ def generate_machine_learning_engineer(data: Dict[str, Any]) -> str:
             degree += f" ({escape_latex(edu['specialization'])})"
         latex += f"\\cvevent{{{degree}}}{{{escape_latex(edu['institution'])}}}"
         latex += f"{{{edu['start_date']}--{edu['end_date']}}}{{{escape_latex(edu['location'])}}}\n\n"
+        if edu.get('notes'):
+            latex += f"{escape_latex(edu['notes'])}\n\n"
 
     # Certifications (first 5)
     latex += "\\cvsection{Certifications}\n\n"
@@ -415,7 +419,7 @@ def generate_scattering_physicist(data: Dict[str, Any]) -> str:
         latex += f"\\cvevent{{{escape_latex(job['title'])}}}{{{escape_latex(job['company'])}}}"
         latex += f"{{{job['start_date']}--{job['end_date']}}}{{{escape_latex(job['location'])}}}\n"
         latex += "\\begin{itemize}\n"
-        for achievement in job["achievements"][:2]:
+        for achievement in job["achievements"][:4]:
             latex += f"\\item {escape_latex(achievement)}\n"
         latex += "\\end{itemize}\n\n"
         latex += "\\divider\n\n"
@@ -445,6 +449,8 @@ def generate_scattering_physicist(data: Dict[str, Any]) -> str:
         degree = escape_latex(edu['degree'])
         latex += f"\\cvevent{{{degree}}}{{{escape_latex(edu['institution'])}}}"
         latex += f"{{{edu['start_date']}--{edu['end_date']}}}{{{escape_latex(edu['location'])}}}\n\n"
+        if edu.get('notes'):
+            latex += f"{escape_latex(edu['notes'])}\n\n"
 
     # Certifications
     latex += "\\cvsection{Certifications}\n\n"

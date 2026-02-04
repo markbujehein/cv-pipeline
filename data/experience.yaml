@@ -17,9 +17,10 @@
   end_date: "present"
   tags: ["scattering-physics", "nanoscience"]
   achievements:
-    - "Personally requested by supervisor to assist on the CoSAXS instrument at MAX IV for one day of experimenting"
-    - "Assisted in 4 days of beam time on the TOSCA spectrometer at ISIS, gaining hands-on facility experience"
-    - "Participated in high-intensity epithermal neutron experiments and transmission measurements"
+    - "Oct 2025: Assisted Prof. Heloisa Bordallo at CoSAXS (MAX IV) for one day of experiments; personally requested for technical support"
+    - "Dec 2025: Organized samples for Prof. Bordallo's PhD student's POLARIS experiment at ISIS; collaborated with Dr. Matthew Krzystyniak for an on-site VESUVIO instrument orientation"
+    - "Feb 2026: Assisted Prof. Bordallo at TOSCA (ISIS) for 4 days; scheduled Muon scattering orientation with Dr. Mark Telling"
+    - "Gained hands-on experience in sample management, instrument operation, and high-intensity epithermal neutron experiments"
 
 - title: "ML Project: Graphical Neural Network"
   company: "ALICE@CERN / University of Copenhagen"
@@ -39,3 +40,12 @@
   tags: ["nanoscience"]
   achievements:
     - "Engaged in political and organizational activities representing STEM students"
+
+- title: "Conference Presentation: DanScatt 2026"
+  company: "Danish Neutron and X-ray Scattering Association"
+  location: "Aarhus, Denmark"
+  start_date: "05/2026"
+  end_date: "05/2026"
+  tags: ["nanoscience", "scattering-physics"]
+  achievements:
+    - "Presenting MSc thesis results on novel neutron moderator materials through a poster session and short oral presentation"
