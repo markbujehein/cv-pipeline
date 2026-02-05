@@ -3,71 +3,43 @@
 # This file contains building blocks for specialized scientific and ML roles.
 # The generator combines these based on the role and variant.
 
-# Your story - why you're in the intersection of physics and computation
-origin_story:
-  nanoscientist: "My journey in Nanoscience has been driven by a fascination with the molecular foundations of matter. At the Niels Bohr Institute, I've specialized in X-ray and Neutron science, developing a deep appreciation for how large-scale facilities can unlock the secrets of material properties through high-precision scattering experiments."
+# Paragraph 1: The Hook (Origin Story & Initial Enthusiasm)
+# Purpose: Grab attention immediately, show genuine interest
+hook:
+  academic_researcher: "My passion for Neutron and X-ray scattering has been forged through hands-on research at international facilities like ISIS, MAX IV, and PSI. As a researcher at the Niels Bohr Institute, I've seen firsthand how high-precision experiments can unravel the complexities of material properties, and I am eager to apply this expertise to the {ROLE} position at {INSTITUTE}."
 
-  ml_scientist: "I believe the next frontier of scientific discovery lies at the intersection of physics and machine learning. My background in Nanoscience, combined with applied statistics and work with Graphical Neural Networks (GNNs) for CERN's ALICE experiment, has equipped me with a unique perspective on using data-driven models to accelerate physical research."
+  industrial_scientist: "I believe that the bridge between fundamental nanoscience and industrial application is built on rigorous experimental data and advanced computation. Having managed large-scale scientific projects and budgets exceeding DKK 1.5 million, I am excited to apply my dual expertise in experimental physics and strategic leadership to the {ROLE} position at {COMPANY}."
 
-  scattering_physicist: "My specialization in Neutron and X-ray scattering is built on hands-on experience at international facilities like ISIS and MAX IV. From investigating novel neutron moderators to analyzing complex spectroscopy data, I thrive in experimental environments that require both technical precision and deep theoretical understanding."
+# Paragraph 2: Why You're a Great Fit (Relevant Achievements & Proof)
+# Purpose: Prove you can do the job with specific metrics
+fit:
+  academic_researcher:
+    highlights:
+      - "Beam Time Leadership: Led 4 days of neutron scattering experiments at CAMEA (PSI) with Prof. Kim Lefmann, and managed high-intensity data collection at TOSCA and POLARIS (ISIS)."
+      - "Scientific Communication: Presenting MSc thesis results on novel neutron moderators at the DanScatt 2026 conference, demonstrating independent research ownership."
+      - "Computational Integration: Bridge experimental scattering results with computational chemistry and neutronics simulations to characterize novel materials."
 
-# Why you're excited about THIS company/institute
-company_excitement:
-  research_institute: "I've long admired {INSTITUTE}'s contributions to {RESEARCH_AREA}. The opportunity to contribute to {SPECIFIC_PROJECT} and work within your world-class facility aligns perfectly with my goal of advancing {SCIENTIFIC_DOMAIN} through collaborative research."
+  industrial_scientist:
+    highlights:
+      - "Project & Financial Management: As Treasurer of Studentersamfundet, I managed an annual budget of DKK 1.5M, stabilizing the economy during a deficit through strategic digitization."
+      - "Interdisciplinary Problem Solving: Developed GNN architectures for ALICE@CERN data, achieving state-of-the-art results in particle track reconstruction."
+      - "Facility Rigor: Applied high-precision laboratory protocols at CoSAXS (MAX IV), translating complex facility data into actionable research insights."
 
-  deep_tech: "I am drawn to {COMPANY}'s innovative approach to {TECHNICAL_PROBLEM}. Your work in {FIELD} represents exactly the kind of high-impact environment where I can apply my dual expertise in experimental nanoscience and computational modeling."
+# Paragraph 3: Why This Company/Institute (Research & Genuine Interest)
+# Purpose: Show you've done research and have genuine interest
+interest:
+  research_institute: "I've long followed {INSTITUTE}'s pioneering work in {RESEARCH_AREA}. Your recent focus on {SPECIFIC_PROJECT} aligns perfectly with my ambition to push the boundaries of scattering physics. I am particularly drawn to your collaborative environment and the opportunity to contribute to {SCIENTIFIC_DOMAIN}."
 
-  instrumentation: "As a researcher who has seen the power of instruments like TOSCA and CoSAXS first-hand, I am incredibly excited about {COMPANY}'s development of {INSTRUMENT/TECHNOLOGY}. I would love to bring my experimental insight to help optimize and push the boundaries of this technology."
+  deep_tech: "I am impressed by {COMPANY}'s commitment to solving {TECHNICAL_PROBLEM}. Having read your engineering blog posts about {BLOG_TOPIC}, I share your philosophy on {PHILOSOPHY}. I am eager to contribute to {FIELD} using my background in both experimental nanoscience and computational discovery."
 
-# Your key scientific and technical strengths
-strengths:
-  beam_time_expert:
-    hook: "I have extensive hands-on experience at large-scale neutron and X-ray facilities."
-    proof: "I have assisted in experiments at ISIS (TOSCA, POLARIS) and MAX IV (CoSAXS), managing sample preparation, instrument orientation, and high-intensity data collection."
+# Paragraph 4: The Close (Value Prop & CTA)
+# Purpose: Show enthusiasm and invite next steps
+close:
+  academic_researcher: "I bring a track record of experimental rigor and a deep network within the scattering community. I'd love to discuss how my experience at large-scale facilities and my upcoming Viva Voce results can support {INSTITUTE}'s research goals. Thank you for your time and consideration."
 
-  computational_physicist:
-    hook: "I bridge the gap between experimental results and theoretical models."
-    proof: "For my MSc thesis, I've integrated experimental scattering data with computational chemistry and neutronics simulations to characterize novel moderator materials."
+  industrial_scientist: "My unique combination of scientific depth and proven organizational leadership makes me a versatile contributor to high-impact teams. I'd welcome the chance to discuss how I can help {COMPANY} achieve its objectives in {AREA}. Thank you for considering my application."
 
-  ml_for_science:
-    hook: "I apply advanced machine learning techniques to complex physical datasets."
-    proof: "I developed Graphical Neural Networks (GNNs) for ALICE@CERN test-beam data, achieving high accuracy in particle identification and track reconstruction."
-
-  independent_researcher:
-    hook: "I take full ownership of my research projects, from design to presentation."
-    proof: "I am presenting my MSc results at the DanScatt 2026 conference and have collaborated directly with facility scientists at ISIS and NBI to drive my thesis research forward."
-
-  collaborative_leader:
-    hook: "I thrive in multidisciplinary teams and international collaborations."
-    proof: "My research involves active collaboration with Dr. Matthew Krzystyniak (ISIS) and Assoc. Prof. Heloisa Bordallo, requiring seamless communication across institutions and domains."
-
-# Relevant achievements mapped to your profile
-relevant_experience:
-  - role: "Nanoscientist"
-    relevance: "researching novel materials and leading collaborations"
-    achievement: "Characterized thymol and p-cymene as neutron moderator materials through combined experimental and computational methods"
-    skills: "Nanoscience, Computational Chemistry, Beam Time Management"
-
-  - role: "ML Engineer"
-    relevance: "developing data-driven models for physical systems"
-    achievement: "Built GNN architectures for high-energy physics data, demonstrating the power of deep learning in scientific classification tasks"
-    skills: "Python, GNNs, Applied Statistics, Data Science"
-
-  - role: "Scattering Physicist"
-    relevance: "operating high-precision instruments and data analysis"
-    achievement: "Assisted in multiple beam times at ISIS and MAX IV, including sample management for POLARIS and spectroscopy analysis on TOSCA/VESUVIO"
-    skills: "Neutronics, NCS, Muon Scattering, Spectrometry"
-
-# Closing - what you bring to the team
-value_proposition:
-  scientific_rigor: "I bring a combination of experimental rigor and computational agility. With my upcoming MSc completion and experience at top-tier facilities, I am ready to contribute immediately to {ORG}'s research mission."
-
-  interdisciplinary_edge: "My ability to speak both the language of experimental physics and machine learning allows me to bridge silos and find innovative solutions to complex R&D challenges."
-
-  proven_performer: "My track record of presenting at conferences like DanScatt and preparing for a high-profile Viva Voce demonstrates my ability to deliver and communicate results at the highest levels of academia."
-
-# Call to action
-closing:
-  direct: "I'd love to discuss how my experience with scattering physics and ML can contribute to {TEAM}. I'm available for a conversation at your convenience."
-
-  enthusiastic: "I'm incredibly excited about the possibility of joining {ORG} and contributing to your work in {AREA}. I'd welcome the opportunity to discuss how I can add value to your team."
+# Call to Action
+cta:
+  direct: "I look forward to the possibility of discussing this role with you further."
+  enthusiastic: "I am incredibly excited about this opportunity and look forward to hearing from you soon."
