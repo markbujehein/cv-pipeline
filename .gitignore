@@ -1,3 +1,6 @@
+# Data dirs
+data/university_curriculum
+
 # Generated LaTeX and PDF files
 output/
 

@@ -5,23 +5,31 @@
   end_date: "present"
   tags: ["academic-researcher", "industrial-scientist"]
   achievements:
-    - "Collaborating with Dr. Matthew Krzystyniak (ISIS) on analysis of Neutron Compton Scattering (NCS) and transmission data from VESUVIO"
-    - "Working with Dr. Svemir Rudic (ISIS) on neutron moderators, performing experiments on the TOSCA spectrometer"
-    - "Investigating thymol and p-cymene for their hydrogen density and radiation resistance as moderator materials"
-    - "Supervised by Assoc. Prof. Heloisa Bordallo; combining experimental data with theoretical calculations"
+    - "Completed MSc thesis at the Niels Bohr Institute, University of Copenhagen, assessing neutron moderator materials using computational modelling and analysis of neutron transmission & inelastic neutron scattering data."
+    - "Awarded grade 12 (A, highest) for 60 ECTS Master's Thesis. External examiner: Dr. Esben Bryndt Klinkby (VP & Co-founder, Saltfoss Energy; Postdoc from Center for Nuclear Technologies, DTU)."
+    - "Developed a strong technical foundation in large-scale facility research, participating in 6 beamtimes."
+    - "NNSP-SwedNess: 2025 Neutron Summer School participant (4 ECTS extracurricular activity)."
+    - "Collaborated with Dr. M. Krzystyniak (ISIS) on analysis of Neutron Compton Scattering (NCS) and transmission data from VESUVIO."
+    - "Worked with Dr. S. Rudić (ISIS) on neutron moderators, performing experiments on the TOSCA spectrometer."
+    - "Investigated thymol and p-cymene as candidate moderator materials."
+    - "Supervised by Prof. Dr. H. Bordallo (NBI) and Dr. S. Rudić (ISIS)."
+    - "Worked across experimental and theoretical materials research, demonstrating strong independent analysis of complex datasets."
+    - "Gained hands-on experience at neutron and synchrotron facilities, building a solid grounding in large-scale research infrastructure and scattering techniques."
+    - "Continuing as a Guest Researcher to prepare a first-author scientific publication."
 
 - title: "Beam Time Assistant"
   company: "MAX IV, ISIS, and Paul Scherrer Institute (PSI)"
   location: "Sweden / UK / Switzerland"
-  start_date: "2024"
+  start_date: "2025"
   end_date: "present"
   tags: ["academic-researcher"]
   achievements:
-    - "Assisted Prof. Kim Lefmann (XNS Group Leader, NBI) at CAMEA (PSI) for 4 days of neutron scattering experiments"
-    - "Oct 2025: Assisted Prof. Heloisa Bordallo at CoSAXS (MAX IV) for one day of experiments; personally requested for technical support"
-    - "Dec 2025: Organized samples for Prof. Bordallo's PhD student's POLARIS experiment at ISIS; collaborated with Dr. Matthew Krzystyniak for an on-site VESUVIO instrument orientation"
-    - "Feb 2026: Assisted Prof. Bordallo at TOSCA (ISIS) for 4 days; scheduled Muon scattering orientation with Dr. Mark Telling"
-    - "Gained hands-on experience in sample management, instrument operation, and high-intensity epithermal neutron experiments"
+    - "Jun 2025: Neutron spin echo spectroscopy at CAMEA (SINQ), 4 days, guided by senior members of the Lefmann Group and instrument responsible Dr. J. Lass"
+    - "Oct 2025: SAXS experiment with Prof. Dr. H. Bordallo and local contact Tomás Plivelic at CoSAXS (MAX IV) for one day of experiments; organized experimental details with local contact and did sample loading."
+    - "Dec 2025: Sample loading for Prof. Dr. H. Bordallo's PhD student's POLARIS experiment at ISIS; collaborated with Dr. M. Krzystyniak for an on-site VESUVIO instrument orientation"
+    - "Feb 2026: INS experiment with Prof. Dr. H. Bordallo and instrument scientist Dr. S. Rudić at TOSCA (ISIS) for 4 days; scheduled Muon scattering orientation with Dr. M. Telling"
+    - "Apr 2026: Assisted Prof. Dr. M. Wood with an experiment at the B07 VerSoX Beamline (Diamond)"
+    - "Gained hands-on experience in sample loading, instrument operation, gas loading equipment, handling of active samples."
 
 - title: "ML Project: Graphical Neural Network"
   company: "ALICE@CERN / University of Copenhagen"
@@ -30,8 +38,8 @@
   end_date: "2024"
   tags: ["academic-researcher", "industrial-scientist"]
   achievements:
-    - "Developed and trained a Graphical Neural Network (GNN) on test-beam data from ALICE@CERN"
-    - "Completed as part of the Applied Statistics & Machine Learning coursework under Assoc. Prof. Troels Petersen"
+    - "Developed and trained a Graphical Neural Network (GNN) on test-beam data from FoCal-H being developed for ALICE@CERN"
+    - "Completed as part of the Applied Statistics & Machine Learning coursework under Prof. Dr. T. Petersen"
 
 - title: "STEM Student Representative"
   company: "IDA STEM Students"
@@ -42,15 +50,6 @@
   achievements:
     - "Engaged in political and organizational activities representing STEM students"
 
-- title: "Conference Presentation: DanScatt 2026"
-  company: "Danish Neutron and X-ray Scattering Association"
-  location: "Aarhus, Denmark"
-  start_date: "05/2026"
-  end_date: "05/2026"
-  tags: ["academic-researcher"]
-  achievements:
-    - "Presenting MSc thesis results on novel neutron moderator materials through a poster session and short oral presentation"
-
 - title: "Treasurer (Financial Officer)"
   company: "Studentersamfundet (Student Union)"
   location: "Aalborg, Denmark"
@@ -58,10 +57,29 @@
   end_date: "2023"
   tags: ["industrial-scientist", "leadership", "financial"]
   achievements:
-    - "Managed an annual budget exceeding DKK 1.5 million for a large student organization"
-    - "Oversaw revenue from 6-7 student bars and monitored the organization's Business Group"
-    - "Stabilized the economy during a difficult financial year by digitizing the student magazine"
-    - "Collaborated with the board to refactor the 15-page budget for improved transparency"
+    - "Responsible for financial management and strategic planning of a large student organization. Oversaw the annual budget exceeding DKK 1.5 million."
+    - "Served as Financial Officer with overall responsibility for all parts of the organization, including monitoring high revenue from 6-7 student bars, supervising the Business Group, and participating in hiring processes."
+    - "Made strategic decisions during a difficult financial year to stabilize the economy. As a result, transitioned the physical magazine to a digital format to address rising costs and prevent further financial losses."
+    - "Collaborated with the board and secretariat to streamline the budget, at the time 16 pages, for improved financial overview and transparency."
+    - "Developed financial understanding by training volunteers in basic economic principles and budget management through workshops."
+
+# Expanded and additional volunteer/leadership roles
+- title: "Positions of Trust (Policy & Representation)"
+  company: "Various Organizations"
+  location: "Denmark"
+  start_date: "2023"
+  end_date: "present"
+  tags: ["academic-researcher", "industrial-scientist", "trust"]
+  achievements:
+    - "Member of the Board of Representatives for IDA (Danish union of STEM professionals), Nov 2023 - Mar 2025."
+    - "Member of the Higher Education and Research Committee of IDA, Mar 2024 - Mar 2025."
+    - "Board member (Executive Committee) of IDA STEM Students, Feb 2024 - Mar 2026."
+    - "Member of the Board of Radikale Venstre, Sep 2025 - Sep 2026; alternate to the board 2023-2024."
+    - "Comittee chair, policy development group for Forskningsreserven 2024 (input party members to the parliamentary group), Radikale Venstre, Mar 2023 - Dec 2023."
+    - "Tutor (Rusvejleder; Freshers' Representative; Orientation Leader) and kitchen manager, Studentersamfundet at Aalborg University (2020-2022). Volunteered as a tutor for physics, energy, general engineering, and nanotechnology students during the orientation period (Sep-Oct). In 2021-2022, served as kitchen manager during the orientation course."
+    - "Chair of the Student Council, Aalborg City Gymnasium, 2017-2018."
+# Meta-leadership framing (for strengths.yaml, but included here for context)
+# "Extensive volunteer leadership (IDA STEM Students, Radikale Venstre, Studentersamfundet) demonstrates high-level institutional navigation and project management. Managing a 1.5 million DKK budget, leading bar operations, and drafting policy inputs for the national research reserve prove ability to negotiate with diverse stakeholders, handle financial reporting, and translate complex technical concepts into strategic societal and policy frameworks. Ideal for large, collaborative European or international research consortia."
 
 - title: "Kitchen & Event Volunteer"
   company: "Østerskov Efterskole"
@@ -70,17 +88,6 @@
   end_date: "2016"
   tags: ["volunteer", "leadership"]
   achievements:
-    - "Fulfilled over 3-4 weeks of mandatory full-time kitchen duty annually, feeding students and staff"
-    - "Proactively volunteered for weekend shifts and assisted with private school events"
-    - "Progression from mandatory duty to university leadership roles (running cabin trip kitchens)"
-
-- title: "Positions of Trust (Policy & Representation)"
-  company: "Various Organizations"
-  location: "Denmark"
-  start_date: "2023"
-  end_date: "present"
-  tags: ["academic-researcher", "industrial-scientist", "trust"]
-  achievements:
-    - "Member of the Board of Representatives, IDA (The Danish Society of Engineers), 2023-2025"
-    - "Member of the Higher Education and Research Committee, IDA, 2024-2025"
-    - "Member of the National Board, Radikale Venstre (The Danish Social Liberal Party)"
+    - "Fulfilled over 3-4 weeks of mandatory full-time kitchen duty annually, feeding students and staff."
+    - "Proactively volunteered for weekend shifts and assisted with private school events."
+    - "Progressed from mandatory duty to university leadership roles, including running kitchens for cabin trips."

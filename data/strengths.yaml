@@ -1,3 +1,43 @@
+- title: "Cross-Disciplinary Scientific Expertise"
+  description: "Trained as a physicist-nanoscientist with strong foundations in physics, chemistry, biophysics, and materials science. Able to integrate knowledge across domains for innovative research."
+  tags: ["academic-researcher", "industrial-scientist"]
+
+- title: "Scientific Curiosity & Determination"
+  description: "Approaches scientific questions with curiosity and determination, consistently seeking deeper understanding and innovative solutions."
+  tags: ["academic-researcher", "industrial-scientist"]
+
+- title: "Independent & Collaborative Work"
+  description: "Works well both independently and as part of a team, contributing positively to group discussions and collaborative research."
+  tags: ["academic-researcher"]
+
+- title: "Attentive and Engaged Researcher"
+  description: "Demonstrates attentiveness and engagement in all research activities, ensuring high-quality outcomes and effective communication."
+  tags: ["academic-researcher"]
+
+- title: "Project-Based & Independent Research Skills"
+  description: "Experienced in both structured project-based problem solving (Aalborg PBL model) and independent MSc-level research. Comfortable leading and collaborating in multidisciplinary teams."
+  tags: ["academic-researcher", "industrial-scientist", "leadership"]
+
+- title: "Core Knowledge Domains"
+  description: "Deep and broad expertise in neutron and X-ray scattering physics, condensed matter physics, materials characterisation, nanofabrication, and biochemistry at the nanoscale."
+  tags: ["academic-researcher", "industrial-scientist"]
+
+- title: "Scientific Curiosity and Determination"
+  description: "Approaches scientific questions with curiosity and determination."
+  tags: ["academic-researcher"]
+
+- title: "Attentive and Engaged Researcher"
+  description: "Attentive and engaged in research activities, contributing positively to discussions."
+  tags: ["academic-researcher"]
+
+- title: "Independent and Collaborative"
+  description: "Works well both independently and in a team."
+  tags: ["academic-researcher"]
+
+- title: "Institutional Navigation & Project Management"
+  description: "Extensive volunteer leadership (IDA STEM Students, Radikale Venstre, Studentersamfundet) demonstrates high-level institutional navigation and project management. Managing a 1.5 million DKK budget, leading bar operations, and drafting policy inputs for the national research reserve prove ability to negotiate with diverse stakeholders, handle financial reporting, and translate complex technical concepts into strategic societal and policy frameworks. Ideal for large, collaborative European or international research consortia."
+  tags: ["academic-researcher", "industrial-scientist", "leadership"]
+
 - title: "Computational Physics & Chemistry"
   description: "Investigating material properties using computational chemistry and molecular modeling to rationalise experimental results."
   tags: ["academic-researcher", "industrial-scientist"]
@@ -7,7 +47,7 @@
   tags: ["academic-researcher"]
 
 - title: "Large-Scale Facility Experience"
-  description: "Hands-on experience at international facilities (ISIS, MAX IV), assisting in complex experimental setups and data collection."
+  description: "Hands-on experience at international facilities (ISIS, MAX IV, PSI, Diamond), assisting in complex experimental setups, data collection, and advanced instrumentation. Also participated in the 2025 XFEL Workshop in Hamburg (EuXFEL and DESY)."
   tags: ["academic-researcher", "industrial-scientist"]
 
 - title: "ML for Scientific Discovery"

@@ -6,9 +6,9 @@
 # Paragraph 1: The Hook (Origin Story & Initial Enthusiasm)
 # Purpose: Grab attention immediately, show genuine interest
 hook:
-  academic_researcher: "My passion for Neutron and X-ray scattering has been forged through hands-on research at international facilities like ISIS, MAX IV, and PSI. As a researcher at the Niels Bohr Institute, I've seen firsthand how high-precision experiments can unravel the complexities of material properties, and I am eager to apply this expertise to the {ROLE} position at {INSTITUTE}."
-
+  academic_researcher: "My passion for Neutron and X-ray scattering has been forged through hands-on research at international facilities like ISIS, MAX IV, and PSI. Having recently successfully defended my MSc thesis at the Niels Bohr Institute, University of Copenhagen, I am continuing my research as a Guest Researcher to prepare a first-author scientific publication. As a researcher at the Niels Bohr Institute, I've seen firsthand how high-precision experiments can unravel the complexities of material properties, and I am eager to apply this expertise to the {ROLE} position at {INSTITUTE}."
   industrial_scientist: "I believe that the bridge between fundamental nanoscience and industrial application is built on rigorous experimental data and advanced computation. Having managed large-scale scientific projects and budgets exceeding DKK 1.5 million, I am excited to apply my dual expertise in experimental physics and strategic leadership to the {ROLE} position at {COMPANY}."
+  academic_summer_school: "My passion for advanced materials design is driven by a deep curiosity to unravel complex material properties at the atomic level. Having recently successfully defended my MSc thesis at the Niels Bohr Institute, University of Copenhagen, I am continuing my research at the Niels Bohr Institute as a Guest Researcher to prepare a first-author scientific publication. I am highly motivated to participate in {SCHOOL_NAME}, as its focus on fundamental understanding and advanced infrastructure perfectly aligns with my ambition to build a career in scattering-based materials research."
 
 # Paragraph 2: Why You're a Great Fit (Relevant Achievements & Proof)
 # Purpose: Prove you can do the job with specific metrics
@@ -18,6 +18,9 @@ fit:
       - "Beam Time Leadership: Led 4 days of neutron scattering experiments at CAMEA (PSI) with Prof. Kim Lefmann, and managed high-intensity data collection at TOSCA and POLARIS (ISIS)."
       - "Scientific Communication: Presenting MSc thesis results on novel neutron moderators at the DanScatt 2026 conference, demonstrating independent research ownership."
       - "Computational Integration: Bridge experimental scattering results with computational chemistry and neutronics simulations to characterize novel materials."
+      - "Bridged experimental and theoretical research by assessing novel neutron moderator materials, demonstrating strong independent analysis of complex computational, neutron transmission, and inelastic neutron scattering datasets."
+      - "Built a solid grounding in large-scale research infrastructure and scattering techniques through hands-on experience at international neutron and synchrotron facilities."
+      - "Recognised as an attentive and determined researcher who thrives both independently and in collaborative team discussions."
 
   industrial_scientist:
     highlights:
@@ -32,12 +35,16 @@ interest:
 
   deep_tech: "I am impressed by {COMPANY}'s commitment to solving {TECHNICAL_PROBLEM}. Having read your engineering blog posts about {BLOG_TOPIC}, I share your philosophy on {PHILOSOPHY}. I am eager to contribute to {FIELD} using my background in both experimental nanoscience and computational discovery."
 
+  academic_summer_school: "The scientific themes of {SCHOOL_NAME} are highly relevant to my immediate research, as finalising my current manuscript relies heavily on advanced structural characterisation, including X-ray diffraction. Furthermore, as I prepare for upcoming PhD applications, engaging directly with facility experts and fellow early-career scientists will be invaluable for expanding my network and deepening my understanding of current directions in the field."
+
 # Paragraph 4: The Close (Value Prop & CTA)
 # Purpose: Show enthusiasm and invite next steps
 close:
   academic_researcher: "I bring a track record of experimental rigor and a deep network within the scattering community. I'd love to discuss how my experience at large-scale facilities and my upcoming Viva Voce results can support {INSTITUTE}'s research goals. Thank you for your time and consideration."
 
-  industrial_scientist: "My unique combination of scientific depth and proven organizational leadership makes me a versatile contributor to high-impact teams. I'd welcome the chance to discuss how I can help {COMPANY} achieve its objectives in {AREA}. Thank you for considering my application."
+  industrial_scientist: "My unique combination of scientific depth and proven organisational leadership makes me a versatile contributor to high-impact teams. I'd welcome the chance to discuss how I can help {COMPANY} achieve its objectives in {AREA}. Thank you for considering my application."
+
+  academic_summer_school: "I bring technical readiness and a highly engaged approach to my research. I am confident that I will benefit substantially from the school's program, and I am eager to contribute positively to the scientific dialogue with both instructors and fellow participants."
 
 # Call to Action
 cta:

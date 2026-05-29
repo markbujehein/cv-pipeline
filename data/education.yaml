@@ -3,6 +3,20 @@
   location: "Copenhagen"
   start_date: "2023"
   end_date: "2025"
+  notes: |
+    My BSc was completed via transfer: I studied at Aalborg University (nanotechnology) from Sep 2019 - Jun 2023, then transferred to University of Copenhagen and finished with a BSc in Nanoscience (Sep 2023 - Jan 2024), overlapping with the start of my MSc in nanoscience (Sep 2024 - Jun 2026).
+    This path resulted in a higher-than-average ECTS total:
+    | Cycle         | Institution(s)                        | Total ECTS |
+    |-------------- |---------------------------------------|------------|
+    | First cycle   | AAU BSc Eng + UCPH BSc                | 232.5      |
+    | Second cycle  | UCPH MSc                              | 120*       |
+    | Third cycle   | NNSP-SwedNess                         | 4          |
+    | **Total**     |                                       | **356.5*** |
+    *End June 2026
+
+    The Aalborg (AAU) phase provided a rigorous engineering foundation focused on problem-based learning (PBL), structural design, fabrication, and extended team collaborations. The Copenhagen (UCPH) phase added deep theoretical physics, advanced mathematics, extensive Python experience, and quantum mechanics to that practical toolkit.
+
+    Academic meta-profile: Developed as a cross-disciplinary physicist-nanoscientist, integrating knowledge from physics, chemistry, biophysics, and materials science. Strong foundations in quantum mechanics, mathematical physics, computational simulation, and nanoscale characterisation. Trained in both project-based learning and independent research.
 - degree: "MSc in Nanoscience"
   institution: "Niels Bohr Institute, University of Copenhagen"
   location: "Copenhagen"
@@ -10,11 +24,28 @@
   end_date: "2026"
   specialization: "Neutron & X-ray Science"
   notes: |
-    Thesis: Investigating novel neutron moderator materials (thymol, p-cymene) using computational and experimental methods.
-    Supervised by Assoc. Prof. Heloisa Bordallo (NBI) and Dr. Svemir Rudic (ISIS).
-    Research includes Neutron Compton Scattering (NCS) and transmission data analysis from VESUVIO (in collaboration with Dr. Matthew Krzystyniak), and VDoS analysis from TOSCA.
-    Viva Voce: 2nd June 2026. External Examiner: Dr. Esben Bryndt Klinkby (VP and co-founder of Saltfoss Energy).
+    Thesis: Investigating candidate neutron moderator materials, utilising computational chemistry and experimental neutron transmission data to bridge the gap between theoretical models and physical reality.
+    Grade 12 (A) for 60 ECTS Master's Thesis. External examiner: Dr. E. B. Klinkby (VP & Co-founder, Saltfoss Energy; former Postdoc, Center for Nuclear Technologies, DTU).
+    Supervised by Prof. H. Bordallo (NBI) and Dr. S. Rudić (ISIS).
+    Academic content includes INS, NCS, NT, and QENS data analysis (VESUVIO, TOSCA) in collaboration with Dr. M. Krzystyniak and supervisors; broad hands-on experience at several beamlines during 9-month thesis period.
+    Viva Voce: 27th of May 2026.
+
+    Large-scale facility and beamtime experience:
+    - ISIS Neutron and Muon Source: Inelastic neutron scattering on TOSCA and neutron powder diffraction on POLARIS.
+    - MAX IV Laboratory: Small-angle X-ray scattering at CoSAXS.
+    - Paul Scherrer Institut (PSI): Cold neutron multiplexing spectrometry at CAMEA.
+    - Diamond Light Source: Soft X-ray spectroscopy at VerSoX.
+    - EuXFEL: Participated in the 2025 XFEL theoretical workshop in Hamburg (EuXFEL & DESY).
+    - NNSP-SwedNess: 2025 Neutron Summer School participant (4 ECTS extracurricular activity).
+
+    Extracurricular activities:
+    - IDA STEM Students (political/organizational involvement)
+    - NNSP-SwedNess Neutron School 2025 (4 ECTS)
+
+    Academic meta-profile: MSc-level research and training in neutron and X-ray scattering, quantum mechanics, mathematical physics, statistical mechanics, nanofabrication, and biochemistry at the nanoscale. Able to operate across physics, chemistry, biophysics, and materials science, integrating knowledge for innovative research.
+
     Relevant Coursework:
-    - X-ray & Neutron Science (22.5 ECTS)
-    - Computational Chemistry (15 ECTS)
+    - X-ray & Neutron Science (26.5 ECTS + 60 ECTS thesis)
+    - Computational Chemistry and quantum chemistry (15 ECTS and audited two aditional courses)
     - Applied Statistics & Machine Learning (15 ECTS)
+    - Condensed matter, themodynamics, statistical physics (audited numerous courses)

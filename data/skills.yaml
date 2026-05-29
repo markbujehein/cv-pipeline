@@ -1,8 +1,18 @@
+Core Knowledge Domains:
+  - "Neutron and X-ray Scattering Physics (elastic/inelastic, SAXS/SANS, spectroscopy, instrument design, Monte Carlo simulation, McStas)"
+  - "Quantum Mechanics (wave mechanics, Dirac notation, band structure, quantum transport)"
+  - "Mathematical Physics (multivariable calculus, linear algebra, ODEs, eigenvalue problems)"
+  - "Statistical Mechanics & Thermodynamics (thermodynamic functions, phase equilibria, kinetics, transport equations)"
+  - "Nanoscience & Nanotechnology (nanofabrication, nanomaterials characterization, electrical nanodevices, project-based design)"
+  - "Biochemistry at the Nanoscale (protein synthesis, purification, biological nanostructures, membrane transport)"
+
 Languages:
-  - "English (C2/Highest non-native level, primary use)"
-  - "Danish (Native)"
-  - "German (B2)"
-  - "Swedish (Conversational/Reading)"
+  - "Danish: Native or bilingual proficiency"
+  - "English: Native or bilingual proficiency"
+  - "Swedish: Limited working proficiency"
+  - "German: Working proficiency (B2)"
+  - "Spanish: Elementary proficiency"
+  - "Czech: Elementary proficiency"
 
 Programming & Computation:
   - "Python"
@@ -12,6 +22,9 @@ Programming & Computation:
   - "Typst"
   - "LaTeX"
   - "Git"
+  - "McStas"
+  - "Mantid"
+  - "SasView"
 
 Scientific Expertise:
   - "Neutron Compton Scattering (NCS)"
@@ -22,6 +35,11 @@ Scientific Expertise:
   - "Spectrometry (TOSCA, CoSAXS, VESUVIO Data)"
   - "Muon Scattering (Orientation)"
   - "Neutron Moderator Materials"
+  - "Computational modelling of neutron transmission" # academic_researcher
+  - "Inelastic neutron scattering" # academic_researcher
+  - "Hands-on experience at neutron and synchrotron facilities" # academic_researcher
+  - "Bridging experimental and theoretical materials research" # academic_researcher
+  - "Independent analysis of complex datasets" # academic_researcher
 
 Machine Learning & Statistics:
   - "Applied Statistics"
@@ -41,3 +59,9 @@ General Scientific & Laboratory Experience:
   - "Atomic Force Microscopy (AFM)"
   - "Fluorescence Microscopy"
   - "Melting Point Analysis"
+  - "AAU: Extensive training in independent research in biochemistry labs, laser labs, and genetic engineering lab (Class 2)"
+
+Credentials:
+  - "Introduction to Responsible AI, Google, Issued Nov 2023, Credential ID 6044065"
+  - "Lasersikkerhedskursus - IEC 60825, DFM - Danmarks Nationale Metrologiinstitut (3 hours brief introduction)"
+  - "Elementær Brandbekæmpelse Basis, Hovedstadens Beredskab"
