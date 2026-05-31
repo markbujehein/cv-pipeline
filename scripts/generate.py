@@ -63,7 +63,7 @@ def generate_industrial_scientist(data: Dict[str, Any]) -> str:
     skills = data['skills']
     strengths = data['strengths']
     education = data['education']
-    certifications = data.get('certifications', [])
+    certifications = data['certifications'] #data.get('certifications', [])
 
     # Build LaTeX directly
     latex = r'''\documentclass[10pt,a4paper,withhyper]{altacv}
@@ -207,10 +207,11 @@ def generate_industrial_scientist(data: Dict[str, Any]) -> str:
         if edu.get('notes'):
             latex += f"{escape_latex(edu['notes'])}\n\n"
 
-    # Certifications
-    latex += "\\cvsection{Certifications}\n\n"
-    for cert in certifications[:4]:
-        latex += f"\\cvtag{{{escape_latex(cert['name'])}}}\n"
+    # disabled: no certifications at present.
+    # # Certifications
+    # latex += "\\cvsection{Certifications}\n\n"
+    # for cert in certifications[:4]:
+    #     latex += f"\\cvtag{{{escape_latex(cert['name'])}}}\n"
 
     latex += "\n\\end{paracol}\n\n"
     latex += "\\end{document}\n"
@@ -358,10 +359,11 @@ def generate_academic_researcher(data: Dict[str, Any]) -> str:
         if edu.get('notes'):
             latex += f"{escape_latex(edu['notes'])}\n\n"
 
-    # Certifications
-    latex += "\\cvsection{Certifications}\n\n"
-    for cert in certifications[:4]:
-        latex += f"\\cvtag{{{escape_latex(cert['name'])}}}\n"
+    # disabled: no certifications at present.
+    # # Certifications
+    # latex += "\\cvsection{Certifications}\n\n"
+    # for cert in certifications[:4]:
+    #     latex += f"\\cvtag{{{escape_latex(cert['name'])}}}\n"
 
     latex += "\n\\end{paracol}\n\n"
     latex += "\\end{document}\n"
