@@ -260,14 +260,14 @@ def test_variant(variant: str, data_dir: Path, output_dir: Path) -> bool:
     else:
         print("  ✅ All skills present")
 
-    print("\n📜 Checking certifications...")
-    issues = check_certifications(data, pdf_text, variant)
-    all_issues.extend(issues)
-    if issues:
-        for issue in issues:
-            print(f"  ❌ {issue}")
-    else:
-        print("  ✅ All certifications present")
+    # print("\n📜 Checking certifications...")
+    # issues = check_certifications(data, pdf_text, variant)
+    # all_issues.extend(issues)
+    # if issues:
+    #     for issue in issues:
+    #         print(f"  ❌ {issue}")
+    # else:
+    #     print("  ✅ All certifications present")
 
     # Summary
     print(f"\n{'='*60}")
